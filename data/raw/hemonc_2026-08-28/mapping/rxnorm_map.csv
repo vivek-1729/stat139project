@@ -1,0 +1,921 @@
+parent,code,hemonc_preferred_rxnorm,rxnorm_type,map,child,rxrel,IN_rxnorm,date_added
+Abarelix,3652,301739,IN,No,,,,D-2023-06-19
+Abciximab,3,83929,IN,No,,,,D-2023-06-19
+Abemaciclib,4,1946825,IN,No,,,,D-2023-06-19
+Abexinostat,5,OMOP5176000,IN,No,,,,D-2023-06-19
+Abiraterone,6,1100072,IN,No,,,,D-2023-06-19
+Acalabrutinib,7,1986808,IN,No,,,,D-2023-06-19
+Acetaminophen,8,161,IN,No,,,,D-2023-06-19
+Acetazolamide,6021,167,IN,No,,,,D-2023-06-19
+Aclarubicin,9,239,IN,No,,,,D-2023-06-19
+Actinium Ac 225 lintuzumab,10,OMOP5180010,IN,No,,,,D-2023-06-19
+Acyclovir,11,281,IN,No,,,,D-2023-06-19
+Adagrasib,45753,2625882,IN,No,,,,D-2023-06-19
+ADAMTS13 recombinant,139603,2670285,IN,No,,,,D-2024-06-15
+Adavosertib,32625,OMOP5176352,IN,No,,,,D-2023-06-19
+Adebrelimab,38688,OMOP5167408,IN,No,,,,D-2023-06-19
+Afamitresgene Autoleucel,139608,2690256,IN,No,,,,D-2024-06-15
+Afatinib,13,1430438,IN,No,,,,D-2023-06-19
+Afuresertib,14,OMOP5171903,IN,No,,,,D-2023-06-19
+Agatolimod,110427,2665622,IN,No,,,,D-2023-06-19
+Aglatimagene besadenovec,170954,OMOP5170284,IN,No,,,,D-2026-08-18
+Aldesleukin,15,70223,IN,No,,,,D-2023-06-19
+Alectinib,16,1727455,IN,No,,,,D-2023-06-19
+Alemtuzumab,17,117055,IN,No,,,,D-2023-06-19
+Alendronate,18,46041,IN,No,,,,D-2023-06-19
+Alisertib,19,OMOP5179270,IN,No,,,,D-2023-06-19
+Alitretinoin,6008,81864,IN,No,,,,D-2023-06-19
+Alizapride,8437,17311,IN,No,,,,D-2023-06-19
+All-trans retinoic acid,20,10753,IN,No,,,,D-2023-06-19
+Allopurinol,21,519,IN,No,,,,D-2023-06-19
+Alpelisib,10396,2169285,IN,No,,,,D-2023-06-19
+Alprazolam,22,596,IN,No,,,,D-2023-06-19
+Altretamine,23,5296,IN,No,,,,D-2023-06-19
+Alvocidib,24,OMOP5169063,IN,No,,,,D-2023-06-19
+Amatuximab,25,OMOP5170735,IN,No,,,,D-2023-06-19
+Amifostine,26,4126,IN,No,,,,D-2023-06-19
+Aminocaproic acid,27,99,IN,No,,,,D-2023-06-19
+Aminoglutethimide,28,677,IN,No,,,,D-2023-06-19
+Aminopterin,29,1440264,IN,No,,,,D-2023-06-19
+Amivantamab,29753,2549199,IN,No,,,,D-2023-06-19
+Amivantamab and hyaluronidase,166050,2729292,MIN,Yes,Amivantamab,Has targeted tx Rx,2549199,D-2026-03-11
+Amivantamab and hyaluronidase,166050,2729292,MIN,Yes,Hyaluronidase,Has support med Rx,5464,D-2026-03-11
+Amivantamab and vorhyaluronidase,170985,Not in RxNorm Extension,MIN,Yes,Amivantamab,Has targeted tx Rx,2549199,D-2026-08-18
+Amivantamab and vorhyaluronidase,170985,Not in RxNorm Extension,MIN,Yes,Vorhyaluronidase,Has support med Rx,OMOP5168997,D-2026-08-18
+Amonafide,10767,1440270,IN,No,,,,D-2023-06-19
+Amoxicillin,11533,723,IN,No,,,,D-2023-06-19
+Ampicillin,12017,733,IN,No,,,,D-2023-06-19
+Amrubicin,30,OMOP5172480,IN,No,,,,D-2023-06-19
+Amsacrine,31,739,IN,No,,,,D-2023-06-19
+Anagrelide,32,596724,IN,No,,,,D-2023-06-19
+Anakinra,12282,72435,IN,No,,,,D-2023-06-19
+Anastrozole,33,84857,IN,No,,,,D-2023-06-19
+Ancestim,12306,140502,IN,No,,,,D-2023-06-19
+Andexanet alfa,211,2045114,IN,No,,,,D-2023-06-19
+Anlotinib,121127,OMOP5555819,IN,No,,,,D-2023-11-18
+Anti-inhibitor coagulant complex,34,314504,IN,No,,,,D-2023-06-19
+Antithrombin III,35,1009,IN,No,,,,D-2023-06-19
+Antithrombin III human,147897,221062,PIN,Yes,Antithrombin III,,1009,D-2025-03-25
+Antithrombin III recombinant,147898,1427179,,Yes,Antithrombin III,,1009,D-2025-03-25
+Antithymocyte globulin horse ATG,36,91601,PIN,No,"Lymphocyte immune globulin, anti-thymocyte globulin",,1011,D-2023-06-19
+Antithymocyte globulin rabbit ATG,37,107044,PIN,No,"Lymphocyte immune globulin, anti-thymocyte globulin",,1011,D-2023-06-19
+Apalutamide,39,1999574,IN,No,,,,D-2023-06-19
+Apatinib,40,OMOP5031324,IN,No,,,,D-2023-06-19
+Apixaban,41,1364430,IN,No,,,,D-2023-06-19
+Aprepitant,42,358255,IN,No,,,,D-2023-06-19
+Argatroban,43,15202,IN,No,,,,D-2023-06-19
+Aripiprazole,13293,89013,IN,No,,,,D-2023-06-19
+Arsenic trioxide,44,18330,IN,No,,,,D-2023-06-19
+Asciminib,53780,2584304,IN,No,,,,D-2023-06-19
+Ascorbic acid,46306,1151,IN,No,,,,D-2023-06-19
+Asparaginase,45,1156,IN,No,,,,D-2023-06-19
+Asparaginase Erwinia chrysanthemi,46,1431738,PIN,Yes,Asparaginase,,1156,D-2023-06-19
+Asparaginase erwinia chrysanthemi-rywn,27223,2561249,PIN,Yes,Asparaginase,,1156,D-2023-06-19
+Aspirin,47,1858285,IN,No,,,,D-2023-06-19
+Aspirin and dipyridamole,48,226716,MIN,Yes,Aspirin,Has support med Rx,1191,D-2023-06-19
+Aspirin and dipyridamole,48,226716,MIN,Yes,Dipyridamole,Has support med Rx,3521,D-2023-06-19
+Atenolol,13341,1202,IN,No,,,,D-2023-06-19
+Atezolizumab,49,1792776,IN,No,,,,D-2023-06-19
+Atezolizumab and hyaluronidase,145036,2693887,MIN,Yes,Atezolizumab,Has immunotherapy Rx,1792776,D-2024-12-14
+Atezolizumab and hyaluronidase,145036,2693887,MIN,Yes,Hyaluronidase,Has support med Rx,5464,D-2024-12-14
+Atovaquone,50,60212,IN,No,,,,D-2023-06-19
+Atropine,51,1223,IN,No,,,,D-2023-06-19
+Aumolertinib,12637,OMOP5179244,IN,No,,,,D-2023-06-19
+Avapritinib,25334,2272107,IN,No,,,,D-2023-06-19
+Avatrombopag,52,2045726,IN,No,,,,D-2023-06-19
+Avelumab,53,1875534,IN,No,,,,D-2023-06-19
+Avutometinib and defactinib,153955,2714922,SBD,Yes,Avutometinib,Has targeted tx Rx,2714515,D-2025-06-18
+Avutometinib and defactinib,153955,2714922,SBD,Yes,Defactinib,Has targeted tx Rx,2174502,D-2025-07-21
+Axatilimab,142045,2691526,IN,No,,,,D-2024-09-18
+Axicabtagene ciloleucel,54,1987398,IN,No,,,,D-2023-06-19
+Axitinib,55,1242999,IN,No,,,,D-2023-06-19
+Azacitidine,56,1251,IN,No,,,,D-2023-06-19
+Azacitidine oral,29973,2396765,BN,Yes,Azacitidiine,,1251,D-2023-06-19
+Azathioprine,13715,1256,IN,No,,,,D-2023-06-19
+Barasertib,60,OMOP5167005,IN,No,,,,D-2023-06-19
+Bavituximab,61,OMOP5178210,IN,No,,,,D-2023-06-19
+BCG vaccine,59,76469,IN,No,,,,D-2023-06-19
+BE-CAR7,121325,xx,,No,,,,D-2023-11-18
+Behenoyl cytarabine,142070,Not in RxNorm Extension,,No,,,,D-2024-09-18
+Belagenpumatucel-L,62,Not in RxNorm Extension,,No,,,,D-2023-06-19
+Belantamab mafodotin,4380,2387834,IN,No,,,,D-2023-06-19
+Belinostat,63,1543543,IN,No,,,,D-2023-06-19
+Belotecan,64,OMOP5167674,IN,No,,,,D-2023-06-19
+Belumosudil,29663,2564025,IN,No,,,,D-2023-06-19
+Belzutifan,29688,2567226,IN,No,,,,D-2023-06-19
+Bendamustine,65,134547,IN,No,,,,D-2023-06-19
+Benmelstobart,167354,xx,,,,,,D-2026-05-20
+Benralizumab,34282,1989100,IN,No,,,,D-2023-06-19
+Betibeglogene autotemcel,145082,2610349,IN,No,,,,D-2024-12-14
+Betrixaban,66,1927851,IN,No,,,,D-2023-06-19
+Bevacizumab,68,253337,IN,No,,,,D-2023-06-19
+Bevacizumab-adcd,13334,2627648,PIN,Yes,Bevacizumab,,253337,D-2023-06-19
+Bevacizumab-aveg,145085,xx,,Yes,Bevacizumab,,253337,D-2024-12-14
+Bevacizumab-awwb,67,2046138,PIN,Yes,Bevacizumab,,253337,D-2023-06-19
+Bevacizumab-aybi,121370,xx,,Yes,Bevacizumab,,253337,D-2023-11-18
+Bevacizumab-bvzr,27957,2268037,PIN,Yes,Bevacizumab,,253337,D-2023-06-19
+Bevacizumab-byva,148029,xx,,Yes,Bevacizumab,,253337,D-2025-03-25
+Bevacizumab-equi,121372,xx,,Yes,Bevacizumab,,253337,D-2023-11-18
+Bevacizumab-maly,119949,2599041,PIN,Yes,Bevacizumab,,253337,D-2023-08-20
+Bevacizumab-nwgd,162321,xx,,Yes,Bevacizumab,,253337,D-2025-12-15
+Bevacizumab-onbe,121373,xx,,Yes,Bevacizumab,,253337,D-2023-11-18
+Bevacizumab-tnjn,142084,2700660,PIN,Yes,Bevacizumab,,253337,D-2024-09-18
+Bexarotene,69,233272,IN,No,,,,D-2023-06-19
+BHQ-880,57,Not in RxNorm Extension,,No,,,,D-2023-08-20
+Bicalutamide,70,83008,IN,No,,,,D-2023-06-19
+Binimetinib,71,2049122,IN,No,,,,D-2023-06-19
+Bireociclib,154172,Not in RxNorm Extension,,No,,,,D-2025-06-18
+Birtamimab,344,OMOP5180201,IN,No,,,,D-2023-06-19
+Bismuth subcitrate,14322,47181,IN,No,,,,D-2023-06-19
+Bismuth subsalicylate,14330,19478,IN,No,,,,D-2023-06-19
+Bivalirudin,72,60819,IN,No,,,,D-2023-06-19
+BL22 immunotoxin,58,Not in RxNorm Extension,,No,,,,D-2023-06-19
+Bleomycin,73,1622,IN,No,,,,D-2023-06-19
+Blinatumomab,74,1597258,IN,No,,,,D-2023-06-19
+Borofalan-10B,119973,OMOP5172556,IN,No,,,,D-2023-08-20
+Bortezomib,75,358258,IN,No,,,,D-2023-06-19
+Bosutinib,76,1307619,IN,No,,,,D-2023-06-19
+Brentuximab vedotin,77,1147320,IN,No,,,,D-2023-06-19
+Brexucabtagene autoleucel,6632,2387277,IN,No,,,,D-2023-06-19
+Brigatinib,78,1921217,IN,No,,,,D-2023-06-19
+Bumetanide,116681,1808,IN,No,,,,D-2023-06-19
+Buparlisib,79,OMOP5166785,IN,No,,,,D-2023-06-19
+Buserelin,114346,1825,IN,No,,,,D-2023-06-19
+Busulfan,80,1828,IN,No,,,,D-2023-06-19
+Cabazitaxel,81,996051,IN,No,,,,D-2023-06-19
+Cabozantinib,82,1363268,IN,No,,,,D-2023-06-19
+Cadonilimab,145172,OMOP5170713,IN,No,,,,D-2024-12-14
+Calaspargase,83,2121416,IN,No,,,,D-2023-06-19
+Calcium phosphate rinse,84,1919,IN,No,,,,D-2023-06-19
+Camizestrant,148157,OMOP5176278,IN,No,,,,D-2025-03-25
+Camrelizumab,14742,OMOP5171084,IN,No,,,,D-2023-06-19
+Cangrelor,85,1656052,IN,No,,,,D-2023-06-19
+Capecitabine,86,194000,IN,No,,,,D-2023-06-19
+Capivasertib,2,2669967,IN,No,,,,D-2023-06-19
+Caplacizumab,87,2110605,IN,No,,,,D-2023-06-19
+Capmatinib,3231,2362165,IN,No,,,,D-2023-06-19
+Carbasalate calcium,116701,OMOP2721042,IN,No,,,,D-2023-06-19
+Carboplatin,88,40048,IN,No,,,,D-2023-06-19
+Carfilzomib,89,1302966,IN,No,,,,D-2023-06-19
+Carmofur,119992,OMOP5031281,IN,No,,,,D-2023-08-20
+Carmustine,90,2105,IN,No,,,,D-2023-06-19
+Carmustine wafer polifeprosan 20,91,309013,SCD,No,Carmustine,,2105,D-2023-06-19
+CART-EGFRvIII,114706,Not in RxNorm Extension,,No,,,,D-2023-06-19
+CARv3-TEAM-E T-cells,139877,xx,,No,,,,D-2024-06-15
+Caspofungin,92,140108,IN,No,,,,D-2023-06-19
+Catumaxomab,93,OMOP999665,IN,No,,,,D-2023-06-19
+CD68-ET3-LV,148221,xx,,No,,,,D-2025-03-25
+Cediranib,94,OMOP5177521,IN,No,,,,D-2023-06-19
+Cefixime,44069,25033,IN,No,,,,D-2023-06-19
+Celecoxib,120000,140587,IN,No,,,,D-2023-06-19
+Cemiplimab,95,2058826,IN,No,,,,D-2023-06-19
+Cephalexin,44124,2231,IN,No,,,,D-2023-06-19
+Ceritinib,96,1535457,IN,No,,,,D-2023-06-19
+Cetirizine,97,20610,IN,No,,,,D-2023-06-19
+Cetuximab,98,318341,IN,No,,,,D-2023-06-19
+Cetuximab-cetu,145246,xx,,Yes,Cetuximab,,318341,D-2024-12-14
+Chidamide,99,OMOP5031283,IN,No,,,,D-2023-06-19
+Chlorambucil,100,2346,IN,No,,,,D-2023-06-19
+Chlorozotocin,121807,1362886,IN,No,,,,D-2023-11-18
+Chlorpheniramine,101,2400,IN,No,,,,D-2023-06-19
+Cilostazol,102,21107,IN,No,,,,D-2023-06-19
+Ciltacabtagene autoleucel,51229,2594775,IN,No,,,,D-2023-06-19
+Cimetidine,103,2541,IN,No,,,,D-2023-06-19
+Ciprofloxacin,104,2551,IN,No,,,,D-2023-06-19
+Cisplatin,105,2555,IN,No,,,,D-2023-06-19
+Cixutumumab,106,OMOP5167509,IN,No,,,,D-2023-06-19
+Cladribine,107,44157,IN,No,,,,D-2023-06-19
+Clarithromycin,108,21212,IN,No,,,,D-2023-06-19
+Clemastine,109,2578,IN,No,,,,D-2023-06-19
+Clobetasol,116765,2590,IN,No,,,,D-2023-06-19
+Clodronate,110,3350,IN,No,,,,D-2023-06-19
+Clofarabine,111,44151,IN,No,,,,D-2023-06-19
+Clonazepam,46333,2598,IN,No,,,,D-2023-06-19
+Clopidogrel,112,32968,IN,No,,,,D-2023-06-19
+Cobimetinib,113,1722365,IN,No,,,,D-2023-06-19
+Colchicine,34403,2683,IN,No,,,,D-2023-06-19
+Coltuximab ravtansine,114,OMOP5177230,IN,No,,,,D-2023-06-19
+Concizumab,121922,2708333,IN,No,,,,D-2023-11-18
+Copanlisib,115,1945077,IN,No,,,,D-2023-06-19
+Cortisone,116,2878,IN,No,,,,D-2023-06-19
+Cosibelimab,148363,2717511,IN,No,,,,D-2025-03-25
+Crenolanib,117,OMOP5176875,IN,No,,,,D-2023-06-19
+Crizanlizumab,118,2262279,IN,No,,,,D-2023-06-19
+Crizotinib,119,1148495,IN,No,,,,D-2023-06-19
+Crovalimab,154727,2686619,IN,No,,,,D-2025-06-18
+Custirsen,120,OMOP5176645,IN,No,,,,D-2023-06-19
+Cyanocobalamin,121,11248,IN,No,,,,D-2023-06-19
+Cyclophosphamide,122,3002,IN,No,,,,D-2023-06-19
+Cyclosporine,45569,3008,IN,No,,,,D-2023-06-19
+Cyproterone acetate,125,3014,IN,No,,,,D-2023-06-19
+Cytarabine,126,3041,IN,No,,,,D-2023-06-19
+Cytarabine and daunorubicin liposomal,127,1942744,BN,No,Cytarabine,,3041,D-2023-06-19
+Cytarabine and daunorubicin liposomal,127,1942744,BN,No,Daunorubicin,,3109,D-2023-06-19
+Cytarabine liposomal,128,968804,PIN,No,Cytarabine,,3041,D-2023-06-19
+Cytomegalovirus Immune Globulin,129,22178,IN,No,,,,D-2023-06-19
+Dabigatran,130,1546356,IN,No,,,,D-2023-06-19
+Dabrafenib,131,1424911,IN,No,,,,D-2023-06-19
+Dacarbazine,132,3098,IN,No,,,,D-2023-06-19
+Dacomitinib,133,2058849,IN,No,,,,D-2023-06-19
+Dactinomycin,134,3100,IN,No,,,,D-2023-06-19
+Dalpiciclib,59131,OMOP5170293,IN,No,,,,D-2023-06-19
+Dalteparin,135,67109,IN,No,,,,D-2023-06-19
+Danaparoid,136,78484,IN,No,,,,D-2023-06-19
+Danazol,137,3102,IN,No,,,,D-2023-06-19
+Danicopan,135141,2678952,IN,No,,,,D-2024-02-28
+Dapsone,138,3108,IN,No,,,,D-2023-06-19
+Daratumumab,139,1721947,IN,No,,,,D-2023-06-19
+Daratumumab and hyaluronidase,4940,2372199,MIN,Yes,Daratumumab,Has targeted tx Rx,1721947,D-2023-06-19
+Daratumumab and hyaluronidase,4940,2372199,MIN,Yes,Hyaluronidase,Has support med Rx,5464,D-2023-06-19
+Daratumumab and vorhyaluronidase,120089,Not in RxNorm Extension,MIN,Yes,Daratumumab,Has targeted tx Rx,1721947,D-2023-06-19
+Daratumumab and vorhyaluronidase,120089,Not in RxNorm Extension,MIN,Yes,Vorhyaluronidase,Has support med Rx,OMOP5168997,D-2023-06-19
+Daraxonrasib,171240,Not in RxNorm Extension,IN,No,,,,D-2026-08-18
+Darbepoetin alfa,140,283838,IN,No,,,,D-2023-06-19
+Darinaparsin,120090,OMOP5173028,IN,No,,,,D-2023-08-20
+Darolutamide,141,2180325,IN,No,,,,D-2023-06-19
+Dasatinib,142,475342,IN,No,,,,D-2023-06-19
+Datopotamab deruxtecan,148417,2703033,IN,No,,,,D-2025-03-25
+Daunorubicin,143,3109,IN,No,,,,D-2023-06-19
+Daunorubicin liposomal,144,214468,PIN,No,Daunorubicin,,3109,D-2023-06-19
+Decitabine,145,15657,IN,No,,,,D-2023-06-19
+Decitabine and cedazuridine,14235,2384456,MIN,Yes,Cedazuridine,Has support med Rx,2384449,D-2023-06-19
+Decitabine and cedazuridine,14235,2384456,MIN,Yes,Decitabine,Has cytotox chemo Rx,15657,D-2023-06-19
+Deferasirox,146,614373,IN,No,,,,D-2023-06-19
+Deferiprone,148,11645,IN,No,,,,D-2023-06-19
+Deferoxamine,149,3131,IN,No,,,,D-2023-06-19
+Defibrotide,150,1311089,IN,No,,,,D-2023-06-19
+Degarelix,151,475230,IN,No,,,,D-2023-06-19
+Denecimig,167554,xx,,,,,,D-2026-05-20
+Denileukin diftitox,152,214470,IN,No,,,,D-2023-06-19
+Denintuzumab mafodotin,153,OMOP5175517,IN,No,,,,D-2023-06-19
+Denosumab,154,993449,IN,No,,,,D-2023-06-19
+Desmopressin,155,3251,IN,No,,,,D-2023-06-19
+Dexamethasone,156,3264,IN,No,,,,D-2023-06-19
+Dexchlorpheniramine,157,22697,IN,No,,,,D-2023-06-19
+Dexrazoxane,158,42736,IN,No,,,,D-2023-06-19
+Diethylstilbestrol,159,3390,IN,No,,,,D-2023-06-19
+Dimetindene,116881,3449,IN,No,,,,D-2023-06-19
+Dinaciclib,160,OMOP5169510,IN,No,,,,D-2023-06-19
+Dinutuximab,161,1606274,IN,No,,,,D-2023-06-19
+Dinutuximab beta,122132,OMOP4754854,IN,No,,,,D-2023-11-18
+Diphenhydramine,162,3498,IN,No,,,,D-2023-06-19
+Dipyridamole,163,3521,IN,No,,,,D-2023-06-19
+Disitamab vedotin,162869,OMOP5178683,IN,No,,,,D-2025-12-15
+Divarasib,122139,OMOP5174519,,No,,,,D-2023-11-18
+Docetaxel,164,72962,IN,No,,,,D-2023-06-19
+Docusate,165,82003,IN,No,,,,D-2023-06-19
+Dolasetron,166,68091,IN,No,,,,D-2023-06-19
+Domperidone,167,3626,IN,No,,,,D-2023-06-19
+Donafenib,120118,OMOP5168925,IN,No,,,,D-2023-08-20
+Dordaviprone,160450,2721194,IN,No,,,,D-2025-09-02
+Dostarlimab,34976,2539967,IN,No,,,,D-2023-06-19
+Dovitinib,168,OMOP5175778,IN,No,,,,D-2023-06-19
+Doxifluridine,169,OMOP4700422,IN,No,,,,D-2023-06-19
+Doxorubicin,170,3639,IN,No,,,,D-2023-06-19
+Doxycycline,171,3640,IN,No,,,,D-2023-06-19
+Dronabinol,172,10402,IN,No,,,,D-2023-06-19
+Durvalumab,173,1919503,IN,No,,,,D-2023-06-19
+Dutasteride,174,228790,IN,No,,,,D-2023-06-19
+Duvelisib,175,2058509,IN,No,,,,D-2023-06-19
+Eculizumab,176,591781,IN,No,,,,D-2023-06-19
+Eculizumab-aagh,122216,2706334,PIN,Yes,Eculizumab,,591781,D-2023-11-18
+Eculizumab-aeeb,122214,2706347,PIN,Yes,Eculizumab,,591781,D-2023-11-18
+Edoxaban,177,1599538,IN,No,,,,D-2023-06-19
+Edrecolomab,178,80726,IN,No,,,,D-2023-06-19
+Efanesoctocog alfa,142348,OMOP5556459,IN,No,,,,D-2024-09-18
+Efgartigimod alfa,155027,2587717,IN,No,,,,D-2025-06-18
+Eflornithine,135220,569,IN,No,,,,D-2024-02-28
+Elacestrant,18359,2628469,IN,No,,,,D-2023-06-19
+Elotuzumab,179,1726104,IN,No,,,,D-2023-06-19
+Elranatamab,120161,2644880,IN,No,,,,D-2023-08-20
+Eltrombopag,180,711942,IN,No,,,,D-2023-06-19
+Eluvixtamab,1,OMOP5170982,IN,No,,,,D-2023-06-19
+Emapalumab,46354,2104604,IN,No,,,,D-2023-06-19
+Emicizumab,181,1989794,IN,No,,,,D-2023-06-19
+Enasidenib,182,1940332,IN,No,,,,D-2023-06-19
+Encorafenib,183,2049106,IN,No,,,,D-2023-06-19
+Enfortumab vedotin,3563,2277607,PIN,No,Enfortumab,,2268307,D-2023-06-19
+Engasertib,162959,Not in RxNorm Extension,,No,,,,D-2025-12-15
+Enoxaparin,184,67108,IN,No,,,,D-2023-06-19
+Ensartinib,185,2712546,IN,No,,,,D-2023-06-19
+Entinostat,186,OMOP5167436,IN,No,,,,D-2023-06-19
+Entospletinib,187,OMOP5170741,IN,No,,,,D-2023-06-19
+Entrectinib,188,2197862,IN,No,,,,D-2023-06-19
+Envafolimab,18741,OMOP5174698,IN,No,,,,D-2023-06-19
+Enzalutamide,189,1307298,IN,No,,,,D-2023-06-19
+Epcoritamab,66092,2637392,IN,No,,,,D-2023-06-19
+Epinephrine autoinjector,190,727341,BN,Yes,Epinephrine,,3992,D-2023-06-19
+Epirubicin,191,3995,IN,No,,,,D-2023-06-19
+Epoetin alfa,193,105694,IN,No,,,,D-2023-06-19
+Epoetin alfa-epbx,192,2047589,PIN,Yes,Epoetin alfa,,105694,D-2023-06-19
+Epoetin beta,20206,105695,IN,No,,,,D-2023-06-19
+Epratuzumab,194,OMOP5168182,IN,No,,,,D-2023-06-19
+Eptifibatide,195,75635,IN,No,,,,D-2023-06-19
+Erdafitinib,196,2123125,IN,No,,,,D-2023-06-19
+Eribulin,197,1045453,IN,No,,,,D-2023-06-19
+Erlotinib,198,337525,IN,No,,,,D-2023-06-19
+Erythromycin,117036,4053,IN,No,,,,D-2023-06-19
+Estradiol,199,4083,IN,No,,,,D-2023-06-19
+Estramustine,200,4089,IN,No,,,,D-2023-06-19
+Ethinylestradiol,120175,4124,IN,No,,,,D-2023-08-20
+Etoposide,201,4179,IN,No,,,,D-2023-06-19
+Etranacogene dezaparvovec,114383,2626727,IN,No,,,,D-2023-06-19
+Everolimus,202,141704,IN,No,,,,D-2023-06-19
+Exagamglogene autotemcel,140113,2671667,IN,No,,,,D-2024-06-15
+Exemestane,203,258494,IN,No,,,,D-2023-06-19
+Factor IX human,204,221099,PIN,Yes,Factor IX,,4249,D-2023-06-19
+Factor IX recombinant,205,1990855,PIN,Yes,Factor IX,,4249,D-2023-06-19
+Factor IX recombinant Fc fusion protein,206,1535944,IN,No,,,,D-2023-06-19
+Factor VIIa recombinant,209,4256,IN,No,,,,D-2023-06-19
+Factor VIII human,207,826070,PIN,Yes,Factor VIII,,4257,D-2023-06-19
+Factor VIII recombinant,208,1300486,PIN,Yes,Factor VIII,,4257,D-2023-06-19
+Factor X human,18870,1426166,PIN,Yes,Factor X,,4262,D-2023-06-19
+Factor XIII concentrate human,210,1091605,PIN,Yes,Factor XIII,,4271,D-2023-06-19
+Fadrozole,122313,OMOP5175493,IN,No,,,,D-2023-11-18
+Famciclovir,212,68099,IN,No,,,,D-2023-06-19
+Famotidine,213,4278,IN,No,,,,D-2023-06-19
+Farletuzumab,110733,OMOP5168001,IN,No,,,,D-2023-06-19
+Febuxostat,155155,73689,IN,No,,,,D-2025-06-18
+Fedratinib,48561,2197490,IN,No,,,,D-2023-06-19
+Ferric carboxymaltose,214,1433693,IN,No,,,,D-2023-06-19
+Ferric gluconate,215,261435,IN,No,,,,D-2023-06-19
+Ferrous sulfate,216,24947,IN,No,,,,D-2023-06-19
+Ferumoxytol,217,473387,IN,No,,,,D-2023-06-19
+Fidanacogene elaparvovec,155192,2681011,IN,No,,,,D-2025-06-18
+Figitumumab,110743,OMOP5180065,IN,No,,,,D-2023-06-19
+Filanesib,218,OMOP5171999,IN,No,,,,D-2023-06-19
+Filgrastim,220,68442,IN,No,,,,D-2023-06-19
+Filgrastim-aafi,66258,2057198,PIN,Yes,Filgrastim,,68442,D-2023-06-19
+Filgrastim-ayow,120189,2595942,PIN,Yes,Filgrastim,,68442,D-2023-06-19
+Filgrastim-sndz,219,1605064,PIN,Yes,Filgrastim,,68442,D-2023-06-19
+Finasteride,221,25025,IN,No,,,,D-2023-06-19
+Finotonlimab,145560,OMOP5169682,IN,No,,,,D-2024-12-14
+Fitusiran,122376,2709439,IN,No,,,,D-2023-11-18
+Floxuridine,222,4488,IN,No,,,,D-2023-06-19
+Fluconazole,223,4450,IN,No,,,,D-2023-06-19
+Fludarabine,224,24698,IN,No,,,,D-2023-06-19
+Fludrocortisone,52383,4452,IN,No,,,,D-2023-06-19
+Flumatinib,38662,OMOP5178597,IN,No,,,,D-2023-06-19
+Fluorouracil,225,4492,IN,No,,,,D-2023-06-19
+Fluoxymesterone,226,4494,IN,No,,,,D-2023-06-19
+Flutamide,227,4508,IN,No,,,,D-2023-06-19
+Folic acid,228,4511,IN,No,,,,D-2023-06-19
+Fondaparinux,230,321208,IN,No,,,,D-2023-06-19
+Formestane,231,15070,IN,No,,,,D-2023-06-19
+Forodesine,232,OMOP5168940,IN,No,,,,D-2023-06-19
+Fosaprepitant,233,1731071,IN,No,,,,D-2023-06-19
+Fosnetupitant,120195,2044417,PIN,No,,,,D-2023-08-20
+Fostamatinib,234,2044896,IN,No,,,,D-2023-06-19
+Fotemustine,235,OMOP997920,IN,No,,,,D-2023-06-19
+Fruquintinib,236,2670179,IN,No,,,,D-2023-06-19
+FT-596,148653,OMOP5168699,IN,No,,,,D-2025-03-25
+Fulvestrant,237,282357,IN,No,,,,D-2023-06-19
+Furmonertinib,51224,OMOP5173108,IN,No,,,,D-2023-06-19
+Furosemide,238,4603,IN,No,,,,D-2023-06-19
+Futibatinib,20248,2628190,IN,No,,,,D-2023-06-19
+Fuzuloparib,163125,OMOP5179485,IN,No,,,,D-2025-12-15
+G207,34886,Not in RxNorm Extension,,No,,,,D-2023-06-19
+Galeterone,239,OMOP5180394,IN,No,,,,D-2023-06-19
+Ganetespib,240,OMOP5167820,IN,No,,,,D-2023-06-19
+Ganitumab,241,OMOP5173981,IN,No,,,,D-2023-06-19
+GD2-CART01,117107,Not in RxNorm Extension,,No,,,,D-2023-06-19
+Gedatolisib,171390,OMOP5172554,IN,No,,,,D-2026-08-18
+Gefitinib,242,328134,IN,No,,,,D-2023-06-19
+Gemcitabine,243,12574,IN,No,,,,D-2023-06-19
+Gemcitabine intravesical system,163153,xx,,Yes,Gemcitabine,,12574,D-2025-12-15
+Gemtuzumab ozogamicin,244,1294580,IN,No,,,,D-2023-06-19
+Gilteritinib,245,2105806,IN,No,,,,D-2023-06-19
+Giredestrant,148729,OMOP5167710,IN,No,,,,D-2025-03-25
+Glasdegib,246,2105845,IN,No,,,,D-2023-06-19
+Glofitamab,110791,2639782,IN,No,,,,D-2023-06-19
+Glucarpidase,247,1242127,IN,No,,,,D-2023-06-19
+Goserelin,248,50610,IN,No,,,,D-2023-06-19
+Granisetron,249,26237,IN,No,,,,D-2023-06-19
+Guadecitabine,252,OMOP5167938,IN,No,,,,D-2023-06-19
+Gumarontinib,155558,OMOP5171458,IN,No,,,,D-2025-06-18
+Haloperidol,253,5093,IN,No,,,,D-2023-06-19
+Hematopoetic progenitor cells cord blood,254,1307732,IN,No,,,,D-2023-06-19
+Heptaplatin,255,OMOP4976860,IN,No,,,,D-2023-06-19
+Histamine dihydrochloride,120274,142136,PIN,No,,,,D-2023-08-20
+Histrelin,256,50975,IN,No,,,,D-2023-06-19
+HuCART19-IL18,167841,xx,,,,,,D-2026-05-20
+Hydrocortisone,258,5492,IN,No,,,,D-2023-06-19
+Hydroxyurea,259,5552,IN,No,,,,D-2023-06-19
+Hydroxyzine,46632,5553,IN,No,,,,D-2023-06-19
+Ianalumab,167846,xx,,,,,,D-2026-05-20
+Ibandronate,261,115264,IN,No,,,,D-2023-06-19
+Ibritumomab tiuxetan,262,262323,IN,No,,,,D-2023-06-19
+Ibrutinib,263,1442981,IN,No,,,,D-2023-06-19
+Icotinib,264,OMOP5031325,IN,No,,,,D-2023-06-19
+Idarubicin,265,5650,IN,No,,,,D-2023-06-19
+Idarucizumab,266,1716191,IN,No,,,,D-2023-06-19
+Idecabtagene vicleucel,23426,2536430,IN,No,,,,D-2023-06-19
+Idelalisib,267,1544460,IN,No,,,,D-2023-06-19
+Ifosfamide,268,5657,IN,No,,,,D-2023-06-19
+Imatinib,269,282388,IN,No,,,,D-2023-06-19
+Imetelstat,270,2685236,IN,No,,,,D-2023-06-19
+Imlunestrant,155893,2725912,IN,No,,,,D-2025-06-18
+Inavolisib,145920,2695422,IN,No,,,,D-2024-12-14
+Indomethacin,271,5781,IN,No,,,,D-2023-06-19
+Infigratinib,272,2550729,IN,No,,,,D-2023-06-19
+Inotuzumab ozogamicin,273,1942950,IN,No,,,,D-2023-06-19
+Interferon alfa-2a,274,5879,IN,No,,,,D-2023-06-19
+Interferon alfa-2b,275,5880,IN,No,,,,D-2023-06-19
+Interferon alfa-2c,59220,OMOP2721238,IN,No,,,,D-2023-06-19
+Interferon alfa-n1,59221,202912,IN,No,,,,D-2023-06-19
+Interferon gamma-1a,120420,1314240,IN,No,,,,D-2023-08-20
+Interferon gamma-1b,276,5882,IN,No,,,,D-2023-06-19
+Intravenous immunoglobulin,21959,5666,IN,No,,,,D-2023-06-19
+Iobenguane I 131,115124,2053281,PIN,No,3-iodobenzylguanidine,,14448,D-2023-06-19
+Iodine I 131 apamistamab,148916,OMOP5171045,IN,No,,,,D-2025-03-25
+Iodine-131,277,1546394,PIN,No,Iodine,,5933,D-2023-06-19
+Ipatasertib,278,OMOP5169644,IN,No,,,,D-2023-06-19
+IPH-2101,260,OMOP5170138,IN,No,,,,D-2023-06-19
+Ipilimumab,279,1094833,IN,No,,,,D-2023-06-19
+Iptacopan,61269,2671061,IN,No,,,,D-2023-06-19
+Irinotecan,280,51499,IN,No,,,,D-2023-06-19
+Irinotecan liposome,281,1719768,PIN,No,Irinotecan,,51499,D-2023-06-19
+Iron dextran,282,5992,IN,No,,,,D-2023-06-19
+Iron sucrose,283,24909,IN,No,,,,D-2023-06-19
+Isatuximab,284,2282018,IN,No,,,,D-2023-06-19
+Isotretinoin,285,6064,IN,No,,,,D-2023-06-19
+Itraconazole,286,28031,IN,No,,,,D-2023-06-19
+Ivonescimab,143813,OMOP5180931,IN,No,,,,D-2024-09-18
+Ivosidenib,287,2049873,IN,No,,,,D-2023-06-19
+Ixabepilone,288,337523,IN,No,,,,D-2023-06-19
+Ixazomib,289,1723735,IN,No,,,,D-2023-06-19
+Izalontamab brengitecan,163475,OMOP5556359,IN,No,,,,D-2025-12-15
+Ketoconazole,290,6135,IN,No,,,,D-2023-06-19
+L-glutamine,291,4885,IN,No,,,,D-2023-06-19
+Lactulose,292,6218,IN,No,,,,D-2023-06-19
+Lamivudine,293,68244,IN,No,,,,D-2023-06-19
+Lanreotide,294,68092,IN,No,,,,D-2023-06-19
+Lanreotide LAR,75279,749813,SBD,Yes,Lanreotide,,68092,D-2023-06-19
+Lansoprazole,295,17128,IN,No,,,,D-2023-06-19
+Lapatinib,296,480167,IN,No,,,,D-2023-06-19
+Lapuleucel-T,297,OMOP5176102,IN,No,,,,D-2023-06-19
+Larotrectinib,298,2105628,IN,No,,,,D-2023-06-19
+Lasofoxifene,123739,OMOP5168280,IN,No,,,,D-2023-11-18
+Lazertinib,123749,2691150,IN,No,,,,D-2023-11-18
+Lenalidomide,299,342369,IN,No,,,,D-2023-06-19
+Lenograstim,300,70167,IN,No,,,,D-2023-06-19
+Lenvatinib,301,1603296,IN,No,,,,D-2023-06-19
+Lepirudin,302,237057,IN,No,,,,D-2023-06-19
+Lerociclib,149198,OMOP5180400,IN,No,,,,D-2025-03-25
+Lestaurtinib,303,OMOP5174320,IN,No,,,,D-2023-06-19
+Letrozole,304,72965,IN,No,,,,D-2023-06-19
+Leucovorin,229,6313,IN,No,,,,D-2023-06-19
+Leuprolide,305,42375,IN,No,,,,D-2023-06-19
+Levamisole,306,6371,IN,No,,,,D-2023-06-19
+Levofloxacin,307,82122,IN,No,,,,D-2023-06-19
+Levoleucovorin,308,877015,IN,No,,,,D-2023-06-19
+Lifileuecel,114432,2675860,IN,No,,,,D-2023-06-19
+Linsitinib,75494,OMOP5166954,IN,No,,,,D-2023-06-19
+Linvoseltamab,156581,2719416,IN,No,,,,D-2025-06-18
+Lipefilgrastim,309,1440046,IN,No,,,,D-2023-06-19
+Lisocabtagene maraleucel,21215,2479136,IN,No,,,,D-2023-06-19
+Lobaplatin,310,Not in RxNorm Extension,,No,,,,D-2023-06-19
+Lomustine,311,6466,IN,No,,,,D-2023-06-19
+Loncastuximab tesirine,53908,2540964,IN,No,,,,D-2023-06-19
+Loperamide,312,6468,IN,No,,,,D-2023-06-19
+Lorazepam,313,6470,IN,No,,,,D-2023-06-19
+Lorlatinib,314,2103164,IN,No,,,,D-2023-06-19
+Lumrotatug,149306,OMOP5555827,IN,No,,,,D-2025-03-25
+Lurbinectedin,26763,2374729,IN,No,,,,D-2023-06-19
+Luspatercept,54062,2262544,IN,No,,,,D-2023-06-19
+Lusutrombopag,315,2054984,IN,No,,,,D-2023-06-19
+Lutetium Lu 177 dotatate,316,1999335,PIN,No,Dotatate,,1797118,D-2023-06-19
+Lutetium Lu 177 vipivotide tetraxetan,68645,2597053,PIN,No,Vipivotide tetraxetan,,2597054,D-2023-06-19
+Magrolimab,257,OMOP5172397,IN,No,,,,D-2023-06-19
+Mannitol,319,6628,IN,No,,,,D-2023-06-19
+Mapatumumab,320,OMOP5180587,IN,No,,,,D-2023-06-19
+Margetuximab,59291,2473851,IN,No,,,,D-2023-06-19
+Marstacimab,156806,2697133,IN,No,,,,D-2025-06-18
+Masitinib,321,OMOP5177021,IN,No,,,,D-2023-06-19
+Mavorixafor,144015,2684021,IN,No,,,,D-2024-09-18
+MCARH-109,28540,Not in RxNorm Extension,,No,,,,D-2023-08-20
+Mechlorethamine,322,6674,IN,No,,,,D-2023-06-19
+Medroxyprogesterone acetate,323,6691,IN,No,,,,D-2023-06-19
+Megestrol,324,6703,IN,No,,,,D-2023-06-19
+Melphalan,325,6718,IN,No,,,,D-2023-06-19
+Melphalan flufenamide,61306,2531369,IN,No,,,,D-2023-06-19
+Melphalan for Injection-Hepatic Delivery System,124558,2671192,BN,No,,,,D-2023-11-18
+Meperidine,46677,6754,IN,No,,,,D-2023-06-19
+Mepolizumab,326,1720597,IN,No,,,,D-2023-06-19
+Mercaptopurine,327,103,IN,No,,,,D-2023-06-19
+Mesna,328,44,IN,No,,,,D-2023-06-19
+Methotrexate,329,6851,IN,No,,,,D-2023-06-19
+Methoxsalen,330,6854,IN,No,,,,D-2023-06-19
+Methylprednisolone,331,6902,IN,No,,,,D-2023-06-19
+Metoclopramide,332,6915,IN,No,,,,D-2023-06-19
+Metronidazole,26852,6922,IN,No,,,,D-2023-06-19
+Mezigdomide,124580,OMOP5176763,IN,No,,,,D-2023-11-18
+Midostaurin,333,1919083,IN,No,,,,D-2023-06-19
+Mifamurtide,120531,OMOP988462,IN,No,,,,D-2023-08-20
+Miriplatin,120535,OMOP5171263,IN,No,,,,D-2023-08-20
+Mirvetuximab soravtansine,109643,2621548,IN,No,,,,D-2023-06-19
+Mitapivat,58331,2594468,IN,No,,,,D-2023-06-19
+Mitomycin,334,632,IN,No,,,,D-2023-06-19
+Mitomycin intravesical solution,160775,2719767,BN,No,,,,D-2025-09-02
+Mitomycin pyelocalyceal,124616,2375819,BN,No,,,,D-2023-11-18
+Mitotane,335,7004,IN,No,,,,D-2023-06-19
+Mitoxantrone,336,7005,IN,No,,,,D-2023-06-19
+Mobocertinib,69109,2570736,IN,No,,,,D-2023-06-19
+Mocetinostat,337,OMOP5173151,IN,No,,,,D-2023-06-19
+Mogamulizumab,338,2054068,IN,No,,,,D-2023-06-19
+Momelotinib,339,2665204,IN,No,,,,D-2023-06-19
+Montelukast,340,88249,IN,No,,,,D-2023-06-19
+MOR202,317,Not in RxNorm Extension,,No,,,,D-2023-06-19
+Mosunetuzumab,111261,2625122,IN,No,,,,D-2023-06-19
+Motesanib,341,OMOP5179533,IN,No,,,,D-2023-06-19
+Motixafortide,124664,2664896,IN,No,,,,D-2023-11-18
+Moxetumomab pasudotox,342,2099295,IN,No,,,,D-2023-06-19
+Mycophenolate mofetil,343,68149,IN,No,,,,D-2023-06-19
+Nabilone,345,31447,IN,No,,,,D-2023-06-19
+Nadofaragene firadenovec,111273,2644436,IN,No,,,,D-2023-06-19
+Nadroparin,346,67031,IN,No,,,,D-2023-06-19
+Naxitamab,26950,2474039,IN,No,,,,D-2023-06-19
+Necitumumab,347,1723738,IN,No,,,,D-2023-06-19
+Nedaplatin,348,OMOP4819566,IN,No,,,,D-2023-06-19
+Nelarabine,349,274771,IN,No,,,,D-2023-06-19
+Neratinib,350,1940643,IN,No,,,,D-2023-06-19
+Netupitant,165743,1552337,IN,no,,,,D-2026-05-20
+Netupitant and palonosetron,351,1552342,MIN,Yes,Netupitant,Has support med Rx,1552337,D-2023-06-19
+Netupitant and palonosetron,351,1552342,MIN,Yes,Palonosetron,Has support med Rx,70561,D-2023-06-19
+Nilotinib,352,662281,IN,No,,,,D-2023-06-19
+Nilutamide,353,31805,IN,No,,,,D-2023-06-19
+Nimotuzumab,146267,OMOP5170835,IN,No,,,,D-2024-12-14
+Nimustine,354,OMOP5166704,IN,No,,,,D-2023-06-19
+Nintedanib,355,1592737,IN,No,,,,D-2023-06-19
+Niraparib,356,1918231,IN,No,,,,D-2023-06-19
+Niraparib and abiraterone,120586,2645240,MIN,Yes,Abiraterone,Has endocrine tx Rx,1100072,D-2023-11-26
+Niraparib and abiraterone,120586,2645240,MIN,Yes,Niraparib,Has targeted tx Rx,1918231,D-2023-11-26
+Nirogacestat,120587,2670631,IN,No,,,,D-2023-08-20
+Nivolumab,357,1597876,IN,No,,,,D-2023-06-19
+Nivolumab and hyaluronidase,149598,2700793,MIN,Yes,Nivolumab,Has immunotherapy Rx,1597876,D-2025-03-25
+Nivolumab and hyaluronidase,149598,2700793,MIN,Yes,Hyaluronidase,Has support med Rx,5464,D-2025-03-25
+Nivolumab and relatlimab,59120,2596775,MIN,Yes,Nivolumab,Has immunotherapy Rx,1597876,D-2023-06-19
+Nivolumab and relatlimab,59120,2596775,MIN,Yes,Relatlimab,Has immunotherapy Rx,2596773,D-2023-06-19
+Nogapendekin alfa inbakicept,141155,2682678,IN,No,,,,D-2024-06-15
+Nolatrexed,358,OMOP5176422,IN,No,,,,D-2023-06-19
+Non-pegylated liposomal doxorubicin,359,OMOP334509,IN,No,Doxorubicin,,3639,D-2023-06-19
+Norethandrolone,360,7513,IN,No,,,,D-2023-06-19
+Nystatin,91138,7597,IN,No,,,,D-2023-06-19
+Obecabtagene autoleucel,146281,2698195,IN,No,,,,D-2024-12-14
+Obinutuzumab,361,974779,IN,No,,,,D-2023-06-19
+Oblimersen,136048,OMOP5171851,IN,No,,,,D-2024-02-28
+Octreotide,362,7617,IN,No,,,,D-2023-06-19
+Octreotide LAR,363,7617,IN,No,,,,D-2023-06-19
+Odronextamab,164317,OMOP5172246,IN,No,,,,D-2025-12-15
+Ofatumumab,364,712566,IN,No,,,,D-2023-06-19
+Olanzapine,365,61381,IN,No,,,,D-2023-06-19
+Olaparib,366,1597582,IN,No,,,,D-2023-06-19
+Olaratumab,367,1855735,IN,No,,,,D-2023-06-19
+Olutasidenib,111358,2623641,IN,No,,,,D-2023-06-19
+Olverembatinib,120610,OMOP5176581,IN,No,,,,D-2023-08-20
+Omacetaxine,368,1546446,IN,No,,,,D-2023-06-19
+Omeprazole,369,7646,IN,No,,,,D-2023-06-19
+Onartuzumab,370,OMOP5177232,IN,No,,,,D-2023-06-19
+Ondansetron,371,26225,IN,No,,,,D-2023-06-19
+Oprelvekin,372,139994,IN,No,,,,D-2023-06-19
+Oprozomib,373,OMOP5177267,IN,No,,,,D-2023-06-19
+Orelabrutinib,164347,OMOP5180464,IN,No,,,,D-2025-12-15
+Orteronel,374,OMOP5179711,IN,No,,,,D-2023-06-19
+Osimertinib,375,1721560,IN,No,,,,D-2023-06-19
+Osocimab,54147,OMOP5174646,IN,No,,,,D-2023-06-19
+Otlertuzumab,376,OMOP5167984,IN,No,,,,D-2023-06-19
+Oxaliplatin,377,32592,IN,No,,,,D-2023-06-19
+Paclitaxel,379,56946,IN,No,,,,D-2023-06-19
+Paclitaxel nanoparticle albumin-bound,378,486610,PIN,No,Paclitaxel,,56946,D-2023-06-19
+Paclitaxel polymeric micelle-bound,149685,xx,,No,Paclitaxel,,56946,D-2025-03-25
+Pacritinib,380,2595243,IN,No,,,,D-2023-06-19
+Padeliporfin,120642,OMOP5174602,IN,No,,,,D-2023-08-20
+Palbociclib,381,1601374,IN,No,,,,D-2023-06-19
+Palifermin,92673,196319,IN,No,,,,D-2023-06-19
+Palonosetron,382,70561,IN,No,,,,D-2023-06-19
+Pamidronate,383,11473,IN,No,,,,D-2023-06-19
+Pamiparib,164385,OMOP5171777,IN,No,,,,D-2025-12-15
+Panitumumab,384,263034,IN,No,,,,D-2023-06-19
+Panobinostat,385,1603350,IN,No,,,,D-2023-06-19
+Pantoprazole,386,40790,IN,No,,,,D-2023-06-19
+Pazopanib,387,714438,IN,No,,,,D-2023-06-19
+Pegaspargase,388,34132,IN,No,,,,D-2023-06-19
+Pegcetacoplan,160925,2557372,IN,No,,,,D-2025-09-02
+Pegfilgrastim,390,338036,IN,No,,,,D-2023-06-19
+Pegfilgrastim-apgf,69847,2469333,PIN,Yes,Pegfilgrastim,,338036,D-2023-06-19
+Pegfilgrastim-bmez,27416,2260702,PIN,Yes,Pegfilgrastim,,338036,D-2023-06-19
+Pegfilgrastim-cbqv,93181,2102692,PIN,Yes,Pegfilgrastim,,338036,D-2023-06-19
+Pegfilgrastim-cegf,164424,xx,,Yes,Pegfilgrastim,,338036,D-2025-12-15
+Pegfilgrastim-dyru,164425,xx,,Yes,Pegfilgrastim,,338036,D-2025-12-15
+Pegfilgrastim-fpgk,120652,2613761,PIN,Yes,Pegfilgrastim,,338036,D-2023-08-20
+Pegfilgrastim-gras,164426,xx,,Yes,Pegfilgrastim,,338036,D-2025-12-15
+Pegfilgrastim-jmdb,389,2048018,PIN,Yes,Pegfilgrastim,,338036,D-2023-06-19
+Pegfilgrastim-pbbk,120653,2602779,PIN,Yes,Pegfilgrastim,,338036,D-2023-08-20
+Pegfilgrastim-pelg,164427,xx,,Yes,Pegfilgrastim,,338036,D-2025-12-15
+Pegfilgrastim-pelm,164428,xx,,Yes,Pegfilgrastim,,338036,D-2025-12-15
+Peginterferon alfa-2a,391,120608,IN,No,,,,D-2023-06-19
+Peginterferon alfa-2b,392,253453,IN,No,,,,D-2023-06-19
+Pegylated liposomal doxorubicin,393,214525,PIN,No,Doxorubicin,,3639,D-2023-06-19
+Pelabresib,164431,OMOP5179573,IN,No,,,,D-2025-12-15
+Pembrolizumab,394,1547545,IN,No,,,,D-2023-06-19
+Pembrolizumab and berahyaluronidase,164436,2723757,MIN,Yes,Pembrolizumab,Has immunotherapy Rx,1547545,D-2025-12-15
+Pembrolizumab and berahyaluronidase,164436,2723757,MIN,Yes,Berahyaluronidase alfa,Has support med Rx,2723752,D-2025-12-15
+Pemetrexed,395,68446,IN,No,,,,D-2023-06-19
+Pemigatinib,13351,2359268,IN,No,,,,D-2023-06-19
+Penicillin V,93237,7984,IN,No,,,,D-2023-06-19
+Penpulimab,32384,2712542,IN,No,,,,D-2023-06-19
+Pentamidine,396,7994,IN,No,,,,D-2023-06-19
+Pentostatin,397,8011,IN,No,,,,D-2023-06-19
+Pentraxin 2,398,Not in RxNorm Extension,,No,,,,D-2023-06-19
+Perifosine,399,OMOP5167865,IN,No,,,,D-2023-06-19
+Pertuzumab,400,1298944,IN,No,,,,D-2023-06-19
+Pertuzumab and Trastuzumab hyaluronidase,111391,2382603,MIN,Yes,Hyaluronidase,Has support med Rx,5464,D-2023-06-19
+Pertuzumab and Trastuzumab hyaluronidase,111391,2382603,MIN,Yes,Pertuzumab,Has targeted tx Rx,1298944,D-2023-06-19
+Pertuzumab and Trastuzumab hyaluronidase,111391,2382603,MIN,Yes,Trastuzumab,Has targeted tx Rx,224905,D-2023-06-19
+Pertuzumab-dpzb,164455,Not in RxNorm Extension,,Yes,Pertuzumab,,1298944,D-2025-12-15
+Pexidartinib,25485,2183102,IN,No,,,,D-2023-06-19
+Phenytoin,401,8183,IN,No,,,,D-2023-06-19
+Phytonadione,402,8308,IN,No,,,,D-2023-06-19
+Pictilisib,403,OMOP5175889,IN,No,,,,D-2023-06-19
+Pidilizumab,404,OMOP5173530,IN,No,,,,D-2023-06-19
+Pimicotinib,168194,xx,,,,,,D-2026-05-20
+Pimitespib,75337,OMOP5178102,IN,No,,,,D-2023-06-19
+Pipobroman,76563,8347,IN,No,,,,D-2023-06-19
+Pirarubicin,405,33764,IN,No,,,,D-2023-06-19
+Pirtobrutinib,61419,2629338,IN,No,,,,D-2023-06-19
+Pivekimab sunirine,172024,2744296,IN,No,,,,D-2026-08-18
+Pixantrone,406,OMOP997118,IN,No,,,,D-2023-06-19
+Plerixafor,407,733003,IN,No,,,,D-2023-06-19
+Plicamycin,408,6995,IN,No,,,,D-2023-06-19
+Plinabulin,409,OMOP5172637,IN,No,,,,D-2023-06-19
+Polatuzumab vedotin,93818,2174090,IN,No,,,,D-2023-06-19
+Pomalidomide,410,1369713,IN,No,,,,D-2023-06-19
+Ponatinib,411,1364347,IN,No,,,,D-2023-06-19
+Ponsegromab,149993,OMOP5175418,IN,No,,,,D-2025-03-25
+Porfimer,412,23066,IN,No,,,,D-2023-06-19
+Pracinostat,413,OMOP5175365,IN,No,,,,D-2023-06-19
+Pralatrexate,414,662019,IN,No,,,,D-2023-06-19
+Pralsetinib,25527,2394936,IN,No,,,,D-2023-06-19
+Prasugrel,415,613391,IN,No,,,,D-2023-06-19
+Pravastatin,416,42463,IN,No,,,,D-2023-06-19
+Prednimustine,76031,8637,IN,No,,,,D-2023-06-19
+Prednisolone,417,8638,IN,No,,,,D-2023-06-19
+Prednisone,418,8640,IN,No,,,,D-2023-06-19
+Procarbazine,419,8702,IN,No,,,,D-2023-06-19
+Prochlorperazine,420,8704,IN,No,,,,D-2023-06-19
+Prolgolimab,164616,OMOP5180220,IN,No,,,,D-2025-12-15
+Promethazine,421,8745,IN,No,,,,D-2023-06-19
+Protamine sulfate,422,8825,IN,No,,,,D-2023-06-19
+Protein C human,114468,723868,PIN,Yes,protein C,,8834,D-2023-06-19
+Prothrombin Complex Concentrate human,423,1484957,MIN,Yes,Factor IX,Has support med Rx,4249,D-2023-06-19
+Prothrombin Complex Concentrate human,423,1484957,MIN,Yes,Factor VII,Has support med Rx,4254,D-2023-06-19
+Prothrombin Complex Concentrate human,423,1484957,MIN,Yes,Factor X,Has support med Rx,4262,D-2023-06-19
+Prothrombin Complex Concentrate human,423,1484957,MIN,Yes,protein C,Has support med Rx,8834,D-2023-06-19
+Prothrombin Complex Concentrate human,423,1484957,MIN,Yes,protein S,Has support med Rx,34822,D-2023-06-19
+Prothrombin Complex Concentrate human,423,1484957,MIN,Yes,prothrombin,Has support med Rx,1441688,D-2023-06-19
+Pyrotinib,111427,OMOP5173977,IN,No,,,,D-2023-06-19
+Quinine,424,9071,IN,No,,,,D-2023-06-19
+Quisinostat,425,OMOP5172715,IN,No,,,,D-2023-06-19
+Quizartinib,426,2643048,IN,No,,,,D-2023-06-19
+Rabeprazole,427,114979,IN,No,,,,D-2023-06-19
+Racotumomab,120701,OMOP5169657,IN,No,,,,D-2023-08-20
+Radium-223,428,1424174,PIN,No,radium,,1546450,D-2023-06-19
+Radotinib,429,OMOP4700524,IN,No,,,,D-2023-06-19
+Raloxifene,430,72143,IN,No,,,,D-2023-06-19
+Raltitrexed,431,196239,IN,No,,,,D-2023-06-19
+Ramosetron,432,OMOP4976873,IN,No,,,,D-2023-06-19
+Ramucirumab,433,1535922,IN,No,,,,D-2023-06-19
+Ranimustine,434,OMOP4819215,IN,No,,,,D-2023-06-19
+Ranitidine,435,9143,IN,No,,,,D-2023-06-19
+Rasburicase,436,283821,IN,No,,,,D-2023-06-19
+Ravulizumab,94609,2107301,IN,No,,,,D-2023-06-19
+Realgar-Indigo naturalis formulation,120712,xx,,No,,,,D-2023-08-20
+Rebimastat,120714,OMOP5167124,IN,No,,,,D-2023-06-19
+Refametinib,437,OMOP5555924,IN,No,,,,D-2023-06-19
+Regorafenib,438,1312397,IN,No,,,,D-2023-06-19
+Relacorilant,161011,2739519,IN,No,,,,D-2025-09-02
+Relatlimab,165744,2596773,IN,no,,,,D-2026-05-20
+Relmacabtagene autoleucel,164707,OMOP5176402,IN,No,,,,D-2025-12-15
+Relugolix,18352,2472778,IN,No,,,,D-2023-06-19
+Remestemcel-L,150098,2700765,IN,No,,,,D-2025-03-25
+Repotrectinib,136156,2670644,IN,No,,,,D-2024-02-28
+Retaspimycin,439,OMOP5173767,IN,No,,,,D-2023-06-19
+Retifanlimab,114475,2632981,IN,No,,,,D-2023-06-19
+Revumenib,146444,2698325,IN,No,,,,D-2024-12-14
+Rezivertinib,158132,OMOP5556351,IN,No,,,,D-2025-06-18
+Rezvilutamide,33912,OMOP5171012,IN,No,,,,D-2023-06-19
+Rho(D) immune globulin,440,35465,IN,No,,,,D-2023-06-19
+Ribociclib,441,1873916,IN,No,,,,D-2023-06-19
+Ricolinostat,442,OMOP5180472,IN,No,,,,D-2023-06-19
+Rilotumumab,443,OMOP5169635,IN,No,,,,D-2023-06-19
+Rilzabrutinib,72560,2722398,IN,No,,,,D-2023-06-19
+Ripretinib,13651,2369389,IN,No,,,,D-2023-06-19
+Risedronate,444,55685,IN,No,,,,D-2023-06-19
+Rituximab,446,121191,IN,No,,,,D-2023-06-19
+Rituximab and hyaluronidase human,447,1927884,MIN,Yes,Hyaluronidase,Has support med Rx,5464,D-2023-06-19
+Rituximab and hyaluronidase human,447,1927884,MIN,Yes,Rituximab,Has targeted tx Rx,121191,D-2023-06-19
+Rituximab-abbs,445,2105824,PIN,Yes,Rituximab,,121191,D-2023-06-19
+Rituximab-arrx,70306,2472325,PIN,Yes,Rituximab,,121191,D-2023-06-19
+Rituximab-blit,125356,xx,,Yes,Rituximab,,121191,D-2023-11-18
+Rituximab-pvvr,48315,2273510,PIN,Yes,Rituximab,,121191,D-2023-06-19
+Rituximab-rite,125358,xx,,Yes,Rituximab,,121191,D-2023-11-18
+Rituximab-rixa,125359,xx,,Yes,Rituximab,,121191,D-2023-11-18
+Rituximab-rixi,125360,xx,,Yes,Rituximab,,121191,D-2023-11-18
+Rivaroxaban,448,1114195,IN,No,,,,D-2023-06-19
+Rociletinib,449,OMOP5171063,IN,No,,,,D-2023-06-19
+Rolapitant,450,1665496,IN,No,,,,D-2023-06-19
+Romidepsin,451,877510,IN,No,,,,D-2023-06-19
+Romiplostim,452,805452,IN,No,,,,D-2023-06-19
+Ropeginterferon alfa-2b,453,2587059,IN,No,,,,D-2023-06-19
+Rucaparib,454,1862579,IN,No,,,,D-2023-06-19
+Rusfertide,141339,OMOP5180828,IN,No,,,,D-2024-06-15
+Ruxolitinib,455,1193326,IN,No,,,,D-2023-06-19
+Sacituzumab govitecan,456,2360232,PIN,No,sacituzumab,,2360231,D-2023-06-19
+Sacituzumab tirumotecan,161039,OMOP5555144,IN,No,,,,D-2025-09-02
+Samarium-153,457,196342,PIN,No,samarium,,9549,D-2023-06-19
+Sapacitabine,458,Not in RxNorm Extension,,No,,,,D-2023-06-19
+Sargramostim,459,69634,IN,No,,,,D-2023-06-19
+Sasanlimab,164849,OMOP5176954,IN,No,,,,D-2025-12-15
+Savolitinib,164853,OMOP5167748,IN,No,,,,D-2025-12-15
+Scopolamine,460,9601,IN,No,,,,D-2023-06-19
+Selinexor,461,2178390,IN,No,,,,D-2023-06-19
+Selpercatinib,13759,2370147,IN,No,,,,D-2023-06-19
+Selumetinib,462,2289380,IN,No,,,,D-2023-06-19
+Semuloparin,463,2368733,IN,No,,,,D-2023-06-19
+Semustine,464,OMOP5170978,IN,No,,,,D-2023-06-19
+Sennosides,465,36387,IN,No,,,,D-2023-06-19
+Serplulimab,35064,OMOP5178890,IN,No,,,,D-2023-06-19
+Sevabertinib,164896,Not in RxNorm Extension,,No,,,,D-2025-12-15
+Siltuximab,466,1535218,IN,No,,,,D-2023-06-19
+Simvastatin,125601,36567,IN,No,,,,D-2023-11-18
+Sintilimab,61131,OMOP5172091,IN,No,,,,D-2023-06-19
+Sipuleucel-T,467,997261,IN,No,,,,D-2023-06-19
+Sirolimus,468,35302,IN,No,,,,D-2023-06-19
+Sirolimus protein-bound particles,43485,2712352,PIN,No,,,,D-2023-06-19
+Sitagliptin,120762,36567,IN,No,,,,D-2023-08-20
+Socazolimab,150307,OMOP5171755,IN,No,,,,D-2025-03-25
+Sodium bicarbonate,118279,36676,IN,No,,,,D-2023-06-19
+Sonidegib,469,1659191,IN,No,,,,D-2023-06-19
+Sonrotoclax,172248,OMOP5555114,IN,No,,,,D-2026-08-18
+Sorafenib,470,495881,IN,No,,,,D-2023-06-19
+Sotorasib,59461,2550714,IN,No,,,,D-2023-06-19
+Sovleplenib,144344,OMOP5172733,IN,No,,,,D-2024-09-18
+Spebrutinib,471,OMOP5174347,IN,No,,,,D-2023-06-19
+Stilbamidine,25815,OMOP5179123,IN,No,,,,D-2023-06-19
+Streptozocin,472,10114,IN,No,,,,D-2023-06-19
+Strontium-89,98422,81638,PIN,No,strontium,,10122,D-2023-06-19
+Sugemalimab,36080,OMOP5172390,IN,No,,,,D-2023-06-19
+Sulfamethoxazole,165746,10180,IN,no,,,,D-2026-05-20
+Sunitinib,473,357977,IN,No,,,,D-2023-06-19
+Sunvozertinib,161113,2719226,IN,No,,,,D-2025-09-02
+Suramin,45472,10256,IN,No,,,,D-2023-06-19
+Surufatinib,165069,OMOP5173434,IN,No,,,,D-2025-12-15
+Sutimlimab,61962,2591404,IN,No,,,,D-2023-06-19
+Tabelecleucel,114494,OMOP5175151,IN,No,,,,D-2023-06-19
+Tacrolimus,474,42316,IN,No,,,,D-2023-06-19
+Tafasitamab,318,2387211,IN,No,,,,D-2023-06-19
+Tagraxofusp,475,2109055,IN,No,,,,D-2023-06-19
+Talazoparib,476,2099704,IN,No,,,,D-2023-06-19
+Taletrectinib,161120,2716919,IN,No,,,,D-2025-09-02
+Talimogene laherparepvec,477,1721264,PIN,No,"herpesvirus 1, human",,1316105,D-2023-06-19
+Taloporfin,120803,OMOP5177940,IN,No,,,,D-2023-08-20
+Talquetamab,111584,2644447,IN,No,,,,D-2023-06-19
+Tamibarotene,478,OMOP4819584,IN,No,,,,D-2023-06-19
+Tamoxifen,479,10324,IN,No,,,,D-2023-06-19
+Tarlatamab,136303,2682954,IN,No,,,,D-2024-02-28
+Tasadenoturev,73494,OMOP5171313,IN,No,,,,D-2023-06-19
+Tasurgratinib,158879,OMOP5179419,IN,No,,,,D-2025-06-18
+Tazemetostat,54224,2274378,IN,No,,,,D-2023-06-19
+Tbo-filgrastim,480,1433764,PIN,Yes,Filgrastim,,68442,D-2023-06-19
+Tebentafusp,47700,2590743,IN,No,,,,D-2023-06-19
+Teclistamab,65150,2619426,IN,No,,,,D-2023-06-19
+Tegafur and uracil,482,466977,MIN,Yes,Tegafur,Has cytotox chemo Rx,4582,D-2023-06-19
+Tegafur and uracil,482,466977,MIN,Yes,Uracil,Has support med Rx,10995,D-2023-06-19
+Tegafur gimeracil oteracil,481,Not in RxNorm Extension,MIN,Yes,Gimeracil,Has support med Rx,OMOP331976,D-2023-06-19
+Tegafur gimeracil oteracil,481,Not in RxNorm Extension,MIN,Yes,Oteracil,Has support med Rx,OMOP331759,D-2023-06-19
+Tegafur gimeracil oteracil,481,Not in RxNorm Extension,MIN,Yes,Tegafur,Has cytotox chemo Rx,4582,D-2023-06-19
+Telisotuzumab vedotin,158894,2714236,PIN,No,,,,D-2025-06-18
+Telotristat,483,1872382,IN,No,,,,D-2023-06-19
+Temoporfin,120813,115243,IN,No,,,,D-2023-08-20
+Temozolomide,484,37776,IN,No,,,,D-2023-06-19
+Temsirolimus,485,657797,IN,No,,,,D-2023-06-19
+Teniposide,486,10362,IN,No,,,,D-2023-06-19
+Tepotinib,19782,2477103,IN,No,,,,D-2023-06-19
+Tesetaxel,487,OMOP5179727,IN,No,,,,D-2023-06-19
+Testosterone cypionate,118358,835827,PIN,No,Testosterone,,10379,D-2023-06-19
+Tetracycline,27930,10395,IN,No,,,,D-2023-06-19
+Thalidomide,488,10432,IN,No,,,,D-2023-06-19
+Thioguanine,489,10485,IN,No,,,,D-2023-06-19
+Thiotepa,490,10473,IN,No,,,,D-2023-06-19
+Ticagrelor,492,1116632,IN,No,,,,D-2023-06-19
+Ticlopidine,493,10594,IN,No,,,,D-2023-06-19
+Tigatuzumab,494,OMOP5167543,IN,No,,,,D-2023-06-19
+Tinzaparin,495,69646,IN,No,,,,D-2023-06-19
+Tipifarnib,496,OMOP5177111,IN,No,,,,D-2023-06-19
+Tirabrutinib,120817,OMOP5176930,IN,No,,,,D-2023-08-20
+Tirapazamine,111602,OMOP5167366,IN,No,,,,D-2023-06-19
+Tirofiban,497,73137,IN,No,,,,D-2023-06-19
+Tisagenlecleucel,498,1986438,IN,No,,,,D-2023-06-19
+Tislelizumab,64463,2677426,IN,No,,,,D-2023-06-19
+Tisotumab vedotin,71307,2571094,PIN,No,Tisotumab,,2571095,D-2023-06-19
+Tivantinib,499,OMOP5178084,IN,No,,,,D-2023-06-19
+Tivozanib,500,2534233,IN,No,,,,D-2023-06-19
+Tocilizumab,501,612865,IN,No,,,,D-2023-06-19
+Tofacitinib,502,1357536,IN,No,,,,D-2023-06-19
+Topotecan,503,57308,IN,No,,,,D-2023-06-19
+Toremifene,504,38409,IN,No,,,,D-2023-06-19
+Toripalimab,64471,2669406,IN,No,,,,D-2023-06-19
+Tosedostat,505,OMOP5176614,IN,No,,,,D-2023-06-19
+Tositumomab and I-131,506,234449,PIN,No,Iodine-131,,1546394,D-2023-06-19
+Tositumomab and I-131,506,234449,PIN,No,Tositumomab,,263010,D-2023-06-19
+Tovorafenib,141487,2682434,IN,No,,,,D-2024-06-15
+Trabectedin,507,1716278,IN,No,,,,D-2023-06-19
+Trametinib,508,1425099,IN,No,,,,D-2023-06-19
+Tranexamic acid,509,10691,IN,No,,,,D-2023-06-19
+Trastuzumab,512,224905,IN,No,,,,D-2023-06-19
+Trastuzumab and hyaluronidase,49082,2119713,MIN,Yes,Hyaluronidase,Has support med Rx,5464,D-2023-06-19
+Trastuzumab and hyaluronidase,49082,2119713,MIN,Yes,Trastuzumab,Has targeted tx Rx,224905,D-2023-06-19
+Trastuzumab deruxtecan,3590,2267574,PIN,No,Trastuzumab,,224905,D-2023-06-19
+Trastuzumab emtansine,12,1371041,PIN,No,Trastuzumab,,224905,D-2023-06-19
+Trastuzumab-anns,48338,2174802,PIN,Yes,Trastuzumab,,224905,D-2023-06-19
+Trastuzumab-dkst,510,2103478,PIN,Yes,Trastuzumab,,224905,D-2023-06-19
+Trastuzumab-dttb,48339,2289225,PIN,Yes,Trastuzumab,,224905,D-2023-06-19
+Trastuzumab-herw,125978,xx,,Yes,Trastuzumab,,224905,D-2023-11-18
+Trastuzumab-pkrb,511,2107051,PIN,Yes,Trastuzumab,,224905,D-2023-06-19
+Trastuzumab-qyyp,48340,2280730,PIN,Yes,Trastuzumab,,224905,D-2023-06-19
+Trastuzumab-strf,141495,2700714,PIN,Yes,Trastuzumab,,224905,D-2024-06-15
+Trastuzumab-tuzn,165207,xx,,Yes,Trastuzumab,,224905,D-2025-12-15
+Trastuzumab-zerc,125979,xx,,Yes,Trastuzumab,,224905,D-2023-11-18
+Trebananib,513,OMOP5180718,IN,No,,,,D-2023-06-19
+Tremelimumab,514,2619313,IN,No,,,,D-2023-06-19
+Treosulfan,515,38508,IN,No,,,,D-2023-06-19
+Triethylenemelamine,120836,2383536,IN,No,,,,D-2023-08-20
+Trifluridine and tipiracil,516,1670310,MIN,Yes,Tipiracil,Has support med Rx,1670304,D-2023-06-19
+Trifluridine and tipiracil,516,1670310,MIN,Yes,Trifluridine,Has cytotox chemo Rx,10803,D-2023-06-19
+Trimethoprim,165747,10829,IN,no,,,,D-2026-05-20
+Trimethoprim-Sulfamethoxazole,517,10831,MIN,Yes,Sulfamethoxazole,Has support med Rx,10180,D-2023-06-19
+Trimethoprim-Sulfamethoxazole,517,10831,MIN,Yes,Trimethoprim,Has support med Rx,10829,D-2023-06-19
+Trimetrexate,18846,42333,IN,No,,,,D-2023-06-19
+Tripotassium dicitratobismuthate,27982,Not in RxNorm Extension,,No,,,,D-2023-06-19
+Triptorelin,518,38782,IN,No,,,,D-2023-06-19
+Trofosfamide,120837,38865,IN,No,,,,D-2023-08-20
+Tropisetron,519,27392,IN,No,,,,D-2023-06-19
+Tucatinib,4683,2361285,IN,No,,,,D-2023-06-19
+Tunlametinib,150504,OMOP5175895,IN,No,,,,D-2025-03-25
+Ublituximab,520,2626349,IN,No,,,,D-2023-06-19
+Umbralisib,59505,2478439,IN,No,,,,D-2023-06-19
+Unfractionated heparin,521,5224,IN,No,,,,D-2023-06-19
+Uracil mustard,522,10996,IN,No,,,,D-2023-06-19
+Urethane,76287,1420982,IN,No,,,,D-2023-06-19
+Uridine triacetate,523,1665222,IN,No,,,,D-2023-06-19
+Utidelone,165253,Not in RxNorm Extension,,No,,,,D-2025-12-15
+Vadastuximab talirine,524,OMOP5179186,IN,No,,,,D-2023-06-19
+Vadimezan,111630,OMOP5166427,IN,No,,,,D-2023-06-19
+Valacyclovir,525,73645,IN,No,,,,D-2023-06-19
+Valemetostat,120865,OMOP5170322,IN,No,,,,D-2023-08-20
+Valganciclovir,526,275891,IN,No,,,,D-2023-06-19
+Valproate,527,40254,IN,No,,,,D-2023-06-19
+Valrubicin,528,31435,IN,No,,,,D-2023-06-19
+Vandetanib,529,1098413,IN,No,,,,D-2023-06-19
+Varlilumab,530,OMOP5166229,IN,No,,,,D-2023-06-19
+Vebreltinib,168491,xx,,,,,,D-2026-05-20
+Veliparib,531,OMOP5166247,IN,No,,,,D-2023-06-19
+Veltuzumab,532,OMOP5173676,IN,No,,,,D-2023-06-19
+Vemurafenib,533,1147220,IN,No,,,,D-2023-06-19
+Venetoclax,534,1747556,IN,No,,,,D-2023-06-19
+Vepdegestrant,161163,OMOP5180403,,No,,,,D-2025-09-02
+Verbrinacogene setparvovec,114506,OMOP5176569,IN,No,,,,D-2023-06-19
+Vimseltinib,150561,2705378,IN,No,,,,D-2025-03-25
+Vinblastine,535,11198,IN,No,,,,D-2023-06-19
+Vincristine,536,11202,IN,No,,,,D-2023-06-19
+Vincristine liposomal,537,1304991,PIN,No,Vincristine,,11202,D-2023-06-19
+Vindesine,538,11204,IN,No,,,,D-2023-06-19
+Vinflunine,539,OMOP1001789,IN,No,,,,D-2023-06-19
+Vinorelbine,540,39541,IN,No,,,,D-2023-06-19
+Vismodegib,541,1242987,IN,No,,,,D-2023-06-19
+Volasertib,542,OMOP5170690,IN,No,,,,D-2023-06-19
+Von Willebrand factor and factor VIII complex human,38407,226623,MIN,Yes,Factor VIII,Has support med Rx,4257,D-2023-06-19
+Von Willebrand factor and factor VIII complex human,38407,226623,MIN,Yes,von Willebrand factor,Has support med Rx,11274,D-2023-06-19
+Von Willebrand factor recombinant,165324,11274,IN,No,,,,D-2025-12-15
+Vonoprazan,120882,2604577,IN,No,,,,D-2023-06-19
+Vorapaxar,543,1537034,IN,No,,,,D-2023-06-19
+Vorasidenib,120883,2690647,IN,No,,,,D-2023-08-20
+Voriconazole,544,121243,IN,No,,,,D-2023-06-19
+Vorinostat,545,194337,IN,No,,,,D-2023-06-19
+Vorolanib,111644,OMOP5181156,IN,No,,,,D-2023-06-19
+Vosaroxin,546,OMOP5176412,IN,No,,,,D-2023-06-19
+Voxelotor,29560,2265678,IN,No,,,,D-2023-06-19
+Warfarin,547,11289,IN,No,,,,D-2023-06-19
+Zanidatamab,146793,2698198,IN,No,,,,D-2024-12-14
+Zanubrutinib,50482,2262435,IN,No,,,,D-2023-06-19
+Zanzalintinib,165510,OMOP5555960,IN,No,,,,D-2025-12-15
+Zenocutuzumab,150749,2699588,IN,No,,,,D-2025-03-25
+Zidesamtinib,172604,OMOP5556071,IN,No,,,,D-2026-08-18
+Zidovudine,548,11413,IN,No,,,,D-2023-06-19
+Ziftomenib,165580,2725985,IN,No,,,,D-2025-12-15
+Zimberelimab,48632,OMOP5181386,IN,No,,,,D-2023-06-19
+Ziv-aflibercept,549,1232150,IN,No,,,,D-2023-06-19
+Zolbetuximab,127128,2695869,IN,No,,,,D-2023-11-18
+Zoledronic acid,550,77655,IN,No,,,,D-2023-06-19
+Zongertinib,161243,2721604,IN,No,,,,D-2025-09-02
+Zuberitamab,146843,OMOP5177892,IN,No,,,,D-2024-12-14
