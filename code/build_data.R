@@ -24,7 +24,8 @@ is.os = found(os.re, tt) & !found(pfs.re, tt) & !found(other.re, tt)
 is.pfs = !is.os & found(pfs.re, tt) & !found(not.pfs.re, tt)
 two = lengths(strsplit(ratios$group_ids, "|", fixed = TRUE)) == 2
 keep = (is.os | is.pfs) & two & ratios$ci_pct %in% 95 &
-  ratios$ci_sides != "ONE_SIDED"
+  ratios$ci_sides != "ONE_SIDED" & !is.na(ratios$ci_lower) &
+  !is.na(ratios$ci_upper)
 hr = ratios[keep, ]
 hr$ep = ifelse(is.os[keep], "os", "pfs")
 hr$row = 1:nrow(hr)
@@ -34,6 +35,9 @@ hr$arm1 = sapply(arm.titles, function(x) x[1])
 hr$arm2 = sapply(arm.titles, function(x) x[2])
 hr$key = paste(pmin(norm.title(hr$arm1), norm.title(hr$arm2)),
                pmax(norm.title(hr$arm1), norm.title(hr$arm2)))
+# some studies post several HRs for the same endpoint and arms (eg subgroups)
+# we count them and keep the 1st one
+hr$n.hr = ave(hr$row, hr$nct_id, hr$ep, hr$key, FUN = length)
 hr = hr[!duplicated(hr[, c("nct_id", "ep", "key")]), ]
 
 # a PFS and an OS hazard ratio on the same two groups, the first one posted
@@ -51,6 +55,7 @@ trials = data.frame(nct.id = pairs$nct_id,
                     allocation = pairs$allocation,
                     phase = pairs$phases,
                     n.pairs = as.numeric(n.pairs[pairs$nct_id]),
+                    pfs.n.hr = pairs$n.hr.pfs, os.n.hr = pairs$n.hr.os,
                     arm1 = pairs$arm1.os, arm2 = pairs$arm2.os,
                     pfs.outcome = pairs$outcome_title.pfs,
                     pfs.hr = pairs$hr.pfs, pfs.lower = pairs$ci_lower.pfs,
