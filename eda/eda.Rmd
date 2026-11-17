@@ -106,3 +106,50 @@ table(solid$tumor)
 ```
 
 Neither categorical variable has missing values. For ici.status this is only because the code labels unclear comparisons as undetermined. We will code these 42 by hand. Out of the 443 comparisons, 114 are coded as having an ICI in one arm only and 256 in no arm. The proposal excludes the 31 with an ICI in both arms, since their control arm has one. One can observe that lung is by far the most common tumor type (135) and pancreas the rarest (10).
+
+### 3. Overlap of the two groups
+
+The first step of our plan is to check whether the 114 ICI comparisons and the 256 non ICI ones overlap in tumor type, PFS effect and start year.
+
+```{r}
+analysis = solid[solid$ici.status %in% c("ICI in one arm", "no ICI"), ]
+nrow(analysis)
+tab = table(analysis$tumor, analysis$ici.status)
+tab
+round(prop.table(tab, 2), 2)
+```
+
+Breast cancer is 6% of the ICI group but 18% of the non-ICI group. Gastroesophageal (12% vs 5%), head and neck (9% vs 4%) and liver or biliary tumors (8% vs 3%) are more than twice as frequent among ICI comparisons. Pancreas has 10 non-ICI comparisons and no ICI one. Melanoma and other have only 2 ICI comparisons each. So the tumor mix differs between the 2 groups.
+
+```{r, fig.height = 3}
+par(mfrow = c(1, 2), las = 1)
+boxplot(log.pfs ~ ici.status, data = analysis, xlab = "",
+        ylab = "log HR for PFS")
+boxplot(start.year ~ ici.status, data = analysis, xlab = "",
+        ylab = "start year")
+```
+
+```{r}
+tapply(analysis$log.pfs, analysis$ici.status, median)
+tapply(analysis$log.pfs, analysis$ici.status, min)
+```
+
+The median log HR for PFS is $-0.198$ in the ICI group and $-0.274$ in the other. The lowest ICI value is $-1.05$. The non-ICI ones go down to $-1.90$. So the PFS effects overlap over most of the range.
+
+```{r}
+tapply(analysis$start.year, analysis$ici.status, median)
+period = cut(analysis$start.year, c(1997, 2008, 2013, 2022),
+             labels = c("1998-2008", "2009-2013", "2014-2022"))
+table(period, analysis$ici.status)
+```
+
+The median start year is 2017 for ICI comparisons against 2011 for the others. In this first pass no ICI comparison started before 2009. Only 6 started between 2009 and 2013 against 94 non-ICI ones. One can observe that start years overlap much less than PFS effects. Even with start year in the model, part of the non-ICI slope would come from years without any ICI comparison. A restriction on period or on clinical setting could help but it would also change the two other checks. We will decide on it after the hand check and before fitting the model.
+
+```{r, fig.width = 5, fig.height = 4}
+plot(log.os ~ log.pfs, data = analysis, las = 1,
+     xlab = "log HR for PFS", ylab = "log HR for OS")
+abline(h = 0, v = 0, lty = 2)
+abline(0, 1)
+```
+
+This plot pools the two groups. Most points sit in the lower left quadrant (where both HRs are below 1). The association is positive but the cloud is flatter than the solid line of slope 1. We can see that OS effects vary less than PFS effects (as in section 2). We don't split this plot by group yet. The choice of a restriction must not depend on the slope difference.
