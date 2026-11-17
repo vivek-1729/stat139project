@@ -1,0 +1,49 @@
+---
+fontsize: 11pt
+geometry: margin=1in
+output:
+  pdf_document:
+    fig_width: 6.5
+    fig_height: 3.5
+---
+
+\begin{center}
+{\Large\bfseries Does the PFS-OS Link Differ for Immune Checkpoint Inhibitors?}\par
+\vspace{4pt}
+Al Liu, aliuschaliu@college.harvard.edu\\
+Eric Jiang, ericjiang@g.harvard.edu\\
+Leonard Mauvernay, leonardmauvernay@g.harvard.edu\\
+Vivek Shah, vivekshah@college.harvard.edu\\
+STAT 139 \quad $|$ \quad EDA and Baseline Model \quad $|$ \quad November 17, 2026\\
+Project area: oncology, randomized clinical trials and surrogate end points
+\end{center}
+
+### 1. Data and source
+
+Our data come from two public sources. The first is the results database of ClinicalTrials.gov. The files in data/raw/ctgov describe phase III and phase II/III studies from the registry. studies.csv lists the studies, arms.csv their arms and hazard_ratios.csv the hazard ratios (HR) they post for progression-free survival (PFS) and overall survival (OS). The second is HemOncKB, a knowledge base of cancer drugs and regimens hosted on the Harvard Dataverse. We use its release of August 28, 2026 (version 54) for the drug classes and the drug synonyms.
+
+The script code/build_data.R keeps each study that posts an HR with a two-sided 95% confidence interval (CI) for PFS and for OS on the same two groups. When a study posts several such comparisons it takes the first one posted. It then codes each arm as containing an immune checkpoint inhibitor (ICI) or not with the drug names and synonyms of HemOncKB, plus a few short forms such as Pembro. An arm is read from its title. Its description is used only when the title says nothing. Placebo, supportive care and observation arms count as arms without an ICI. An ICI that only shows up in a description can be crossover after progression. These comparisons stay undetermined. The tumor type comes from the conditions field, or from the study title when the conditions are too vague. The result is saved in data/processed/trials_first_pass.csv.
+
+```{r}
+source("../code/build_data.R")
+nrow(studies)
+table(studies$allocation)
+table(studies$phases)
+nrow(trials)
+table(trials$phase)
+```
+
+The registry files hold 2290 studies, all randomized. Out of them, 528 have such a comparison and 12 of those are phase II/III. For these 12 we will check by hand that the results come from the phase III part. As planned in the proposal we keep solid tumors only.
+
+```{r}
+sum(trials$tumor == "hematologic")
+solid = trials[trials$tumor != "hematologic", ]
+solid$log.os = log(solid$os.hr)
+solid$log.pfs = log(solid$pfs.hr)
+solid$se.os = (log(solid$os.upper) - log(solid$os.lower))/(2*1.96)
+nrow(solid)
+```
+
+This drops 84 hematologic comparisons and leaves 444. We define $Y_i$ as the log HR for OS, $X_i$ as the log HR for PFS and $s_i = (\log U_i - \log L_i)/(2 \cdot 1.96)$ as the approximate standard error of $Y_i$, where $(L_i, U_i)$ is the 95% CI of the OS HR. When an HR is posted as experimental against control, a value below 1 favors the experimental arm. In the code the three variables are log.os, log.pfs and se.os.
+
+This is a first automatic pass. Nobody has checked the records by hand yet. In particular we don't know yet if the ICI arm is always the experimental one. The HRs are also taken as posted, without checking their direction.

@@ -1,0 +1,8 @@
+.DS_Store
+.Rhistory
+.RData
+.Rproj.user/
+*.log
+*.aux
+*.knit.md
+eda/*_files/
