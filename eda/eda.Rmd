@@ -33,7 +33,7 @@ nrow(trials)
 table(trials$phase)
 ```
 
-The registry files hold 2290 studies, all randomized. Out of them, 528 have such a comparison and 12 of those are phase II/III. For these 12 we will check by hand that the results come from the phase III part. As planned in the proposal we keep solid tumors only.
+The registry files hold 2290 studies, all randomized. Out of them, 526 have such a comparison and 12 of those are phase II/III. For these 12 we will check by hand that the results come from the phase III part. As planned in the proposal we keep solid tumors only.
 
 ```{r}
 sum(trials$tumor == "hematologic")
@@ -44,6 +44,65 @@ solid$se.os = (log(solid$os.upper) - log(solid$os.lower))/(2*1.96)
 nrow(solid)
 ```
 
-This drops 84 hematologic comparisons and leaves 444. We define $Y_i$ as the log HR for OS, $X_i$ as the log HR for PFS and $s_i = (\log U_i - \log L_i)/(2 \cdot 1.96)$ as the approximate standard error of $Y_i$, where $(L_i, U_i)$ is the 95% CI of the OS HR. When an HR is posted as experimental against control, a value below 1 favors the experimental arm. In the code the three variables are log.os, log.pfs and se.os.
+This drops 83 hematologic comparisons and leaves 443. We define $Y_i$ as the log HR for OS, $X_i$ as the log HR for PFS and $s_i = (\log U_i - \log L_i)/(2 \cdot 1.96)$ as the approximate standard error of $Y_i$, where $(L_i, U_i)$ is the 95% CI of the OS HR. When an HR is posted as experimental against control, a value below 1 favors the experimental arm. In the code the three variables are log.os, log.pfs and se.os.
 
 This is a first automatic pass. Nobody has checked the records by hand yet. In particular we don't know yet if the ICI arm is always the experimental one. The HRs are also taken as posted, without checking their direction.
+
+### 2. Data quality
+
+```{r}
+cont = solid[, c("log.os", "log.pfs", "se.os", "start.year")]
+cont.tab = data.frame(missing = colSums(is.na(cont)),
+                      non.missing = colSums(!is.na(cont)),
+                      mean = apply(cont, 2, mean),
+                      median = apply(cont, 2, median),
+                      sd = apply(cont, 2, sd),
+                      IQR = apply(cont, 2, IQR))
+round(cont.tab, 3)
+```
+
+No continuous variable has missing values, since the code only keeps HRs that come with both CI limits. The median log HR is $-0.236$ for PFS and $-0.105$ for OS. We can see that effects on OS are closer to 0 and less spread out (sd 0.238 for OS against 0.383 for PFS). The median start year is 2015 and the IQR is 9 years.
+
+```{r}
+mean(solid$log.pfs > 0)
+mean(solid$log.os > 0)
+```
+
+The PFS HR is above 1 in 21% of the comparisons and the OS HR in 26%. An HR above 1 can mean that the experimental arm did worse. It can also mean that the trial posted the HR the other way round (control against experimental). The hand check will tell which.
+
+```{r}
+sum(solid$n.pairs > 1)
+sum(solid$pfs.n.hr > 1 | solid$os.n.hr > 1)
+```
+
+In 53 studies there is more than one PFS-OS comparison. In 194 there are several HRs for the same end point and the same arms, for instance in subgroups. The code keeps the first one posted. It can be a subgroup rather than the primary analysis. The hand check will pick the primary comparison and analysis, with PFS and OS in the same population.
+
+```{r}
+w = 1/solid$se.os^2
+round(range(solid$se.os), 3)
+max(w)/min(w)
+low = order(solid$se.os)[1:3]
+solid[low, c("nct.id", "os.hr", "os.lower", "os.upper", "se.os")]
+solid$arm1[low]
+solid$arm2[low]
+```
+
+The standard error se.os goes from 0.044 to 1.220. With weights $w_i = 1/s_i^2$, the most precise comparison weighs about 785 times more than the least precise one. We take a closer look at the three comparisons with the smallest se.os, as they weigh the most. The first one (NCT02178956) posts an OS HR of 1.01 with a CI from 0.86 to 1.02. On the log scale a Wald CI is centered on the log HR. Here the HR sits almost on the upper limit. The trial paper gives 0.86 to 1.20 (Shah et al., Clin. Cancer Res. 2022). The registry entry swaps two digits (1.02 for 1.20). We will correct it in the hand check. The second one compares darbepoetin alfa (a drug for anemia) with placebo. The proposal only keeps comparisons of anticancer drugs. This one goes. The hand check will also look for other supportive care trials. The third (NCT03675737) looks fine.
+
+```{r}
+asym = (log(solid$os.upper) + log(solid$os.lower))/2 - log(solid$os.hr)
+solid[abs(asym) > 0.05, c("nct.id", "os.hr", "os.lower", "os.upper")]
+```
+
+More generally, a gap above 0.05 between a log HR and the middle of its CI on the log scale flags 4 comparisons, NCT02178956 included. Rounding can explain one of them (NCT00631371 posts 1.0 with 0.9 to 1.3). We will check the other two against the publications.
+
+```{r}
+cat.vars = solid[, c("ici.status", "tumor")]
+data.frame(missing = colSums(is.na(cat.vars)),
+           non.missing = colSums(!is.na(cat.vars)))
+table(solid$ici.status)
+options(width = 76)
+table(solid$tumor)
+```
+
+Neither categorical variable has missing values. For ici.status this is only because the code labels unclear comparisons as undetermined. We will code these 42 by hand. Out of the 443 comparisons, 114 are coded as having an ICI in one arm only and 256 in no arm. The proposal excludes the 31 with an ICI in both arms, since their control arm has one. One can observe that lung is by far the most common tumor type (135) and pancreas the rarest (10).
