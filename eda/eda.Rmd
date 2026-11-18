@@ -143,7 +143,7 @@ period = cut(analysis$start.year, c(1997, 2008, 2013, 2022),
 table(period, analysis$ici.status)
 ```
 
-The median start year is 2017 for ICI comparisons against 2011 for the others. In this first pass no ICI comparison started before 2009. Only 6 started between 2009 and 2013 against 94 non-ICI ones. One can observe that start years overlap much less than PFS effects. Even with start year in the model, part of the non-ICI slope would come from years without any ICI comparison. A restriction on period or on clinical setting could help but it would also change the two other checks. We will decide on it after the manual review and before fitting the model.
+The median start year is 2017 for ICI comparisons against 2011 for the others. In this first pass no ICI comparison started before 2009. Only 6 started between 2009 and 2013 against 94 non-ICI ones. One can observe that start years overlap much less than PFS effects. Even with start year in the model, part of the non-ICI slope would come from years without any ICI comparison. A restriction on period or on clinical setting could help but it would also change the two other checks. We will decide on it after the manual review and before the final fit.
 
 ```{r, fig.width = 5, fig.height = 4}
 plot(log.os ~ log.pfs, data = analysis, las = 1,
@@ -152,21 +152,24 @@ abline(h = 0, v = 0, lty = 2)
 abline(0, 1)
 ```
 
-This plot pools the two groups. Most points sit in the lower left quadrant (where both HRs are below 1). The association is positive but the cloud is flatter than the solid line of slope 1. We can see that OS effects vary less than PFS effects (as in section 2). We don't split this plot by group yet. The choice of a restriction must not depend on the slope difference.
+This plot pools the two groups. Most points sit in the lower left quadrant (where both HRs are below 1). The association is positive but the cloud is flatter than the solid line of slope 1. We can see that OS effects vary less than PFS effects (as in section 2).
 
 ### 4. Hypothesis and baseline model
 
 We hypothesize that the trial-level slope linking the treatment effect on OS to the treatment effect on PFS differs between ICI and non-ICI comparisons. Let $I_i = 1$ if only the experimental arm of comparison $i$ contains an ICI and $I_i = 0$ if neither arm does. Let $Z_i$ hold the tumor type and the start year. The baseline model is the model from our proposal
-$$Y_i = \beta_0 + \beta_1 X_i + \beta_2 I_i + \beta_3 X_i I_i + \gamma^\top Z_i + \varepsilon_i,$$
+$$Y_i = \beta_0 + \beta_1 X_i + \beta_2 I_i + \beta_3 X_i I_i + \gamma^\top Z_i + \varepsilon_i$$
 fitted by weighted least squares with weights $w_i = 1/s_i^2$. The model assumes that the slopes do not vary with tumor type or start year. Then $\beta_1$ is the PFS-OS slope without an ICI and $\beta_1 + \beta_3$ the slope with an ICI, for a given tumor type and start year. We test
-$$H_0\colon \beta_3 = 0 \quad \text{against} \quad H_A\colon \beta_3 \neq 0.$$
-Under $H_0$ the two groups share the same PFS-OS slope. We report the estimate of $\beta_3$ with a 95% CI. Both the CI and the test use heteroscedasticity-consistent (sandwich) standard errors, in the HC3 form, which is less affected by the few comparisons with very large weights (section 2). Weighted least squares assumes that the variance of $Y_i$ is proportional to $s_i^2$. This fails if trials also vary by an extra amount on top of their sampling error. The sandwich standard errors do not rely on this assumption. With them the t distribution is only an approximation.
+$$H_0\colon \beta_3 = 0 \quad \text{against} \quad H_A\colon \beta_3 \neq 0$$
+Under $H_0$ the two groups share the same PFS-OS slope. We report the estimate of $\beta_3$ with a 95% CI. Both the CI and the test use heteroscedasticity-consistent (sandwich) standard errors in the HC3 form. HC3 corrects for leverage. The comparisons with very large weights (section 2) have high leverage. Weighted least squares assumes that the variance of $Y_i$ is proportional to $s_i^2$. This fails if trials also vary by an extra amount on top of their sampling error. The sandwich standard errors do not rely on this assumption. With them the t distribution is only an approximation.
 
 As a baseline we fit the model to the 370 comparisons of section 3, before the manual review and before any restriction.
 
-```{r, message = FALSE}
+```{r, message = FALSE, warning = FALSE}
 library(sandwich)
 library(lmtest)
+```
+
+```{r}
 analysis$ici = as.numeric(analysis$ici.status == "ICI in one arm")
 fit = lm(log.os ~ log.pfs * ici + tumor + start.year, data = analysis,
          weights = 1/se.os^2)
@@ -177,8 +180,8 @@ round(sum(coef(fit)[c("log.pfs", "log.pfs:ici")]), 3)
 round(summary(fit)$sigma, 2)
 ```
 
-The estimated slope is 0.355 without an ICI and 0.468 with one. So $\hat\beta_3 = 0.113$, with a 95% CI from $-0.031$ to 0.257 and a p-value of 0.12. At the 5% level we can't reject $H_0$. The CI still allows a slope about 70% steeper in the ICI group, as well as a slightly flatter one. $\hat\beta_2 = -0.090$ means that for a PFS HR of 1, the OS HR is about 9% lower with an ICI. Both slopes are well below 1, in line with the flat cloud of section 3.
+The estimated slope is 0.355 without an ICI and 0.468 with one. So $\hat\beta_3 = 0.113$, with a 95% CI from $-0.031$ to 0.257 and a p-value of 0.12. At the 5% level we can't reject $H_0$. The CI still allows a much steeper slope in the ICI group, as well as a slightly flatter one. Both slopes are well below 1, in line with the flat cloud of section 3.
 
-The residual standard error of the weighted fit is 1.2. If $s_i$ were the only source of variation it would be close to 1. This suggests some extra variation between trials, which is why we use the sandwich standard errors.
+The residual standard error of the weighted fit is 1.2. If $s_i$ were the only source of variation it would be close to 1. So the comparisons vary more than their sampling errors imply. Part of this can come from the errors of section 2. If the extra variation does not scale with $s_i^2$, the model-based standard errors are off. The sandwich ones still hold.
 
 These numbers are only a baseline. The manual review will correct HRs (such as NCT02178956), drop comparisons that are not of anticancer drugs and code the 42 undetermined ones. Section 3 also showed that the two groups barely overlap in start year and that pancreas has no ICI comparison. So the adjustment for $Z_i$ partly relies on extrapolation. We will decide on a restriction from the overlap checks only and refit the model once, together with the residual, Cook's distance and unweighted checks of the proposal.
