@@ -16,3 +16,5 @@ We study whether the slope linking treatment effects on overall survival to thos
 - eda/eda.Rmd is the EDA milestone. It sources the script.
 
 Knit eda.Rmd from the eda folder or run Rscript build_data.R from the code folder
+
+eda.Rmd also needs the R packages sandwich and lmtest.
