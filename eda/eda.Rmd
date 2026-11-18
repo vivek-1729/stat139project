@@ -33,7 +33,7 @@ nrow(trials)
 table(trials$phase)
 ```
 
-The registry files hold 2290 studies, all randomized. Out of them, 526 have such a comparison and 12 of those are phase II/III. For these 12 we will check by hand that the results come from the phase III part. As planned in the proposal we keep solid tumors only.
+The registry files hold 2290 studies, all randomized. Out of them, 526 have such a comparison and 12 of those are phase II/III. For these 12 we will check in the manual review that the results come from the phase III part. As planned in the proposal we keep solid tumors only.
 
 ```{r}
 sum(trials$tumor == "hematologic")
@@ -46,7 +46,7 @@ nrow(solid)
 
 This drops 83 hematologic comparisons and leaves 443. We define $Y_i$ as the log HR for OS, $X_i$ as the log HR for PFS and $s_i = (\log U_i - \log L_i)/(2 \cdot 1.96)$ as the approximate standard error of $Y_i$, where $(L_i, U_i)$ is the 95% CI of the OS HR. When an HR is posted as experimental against control, a value below 1 favors the experimental arm. In the code the three variables are log.os, log.pfs and se.os.
 
-This is a first automatic pass. Nobody has checked the records by hand yet. In particular we don't know yet if the ICI arm is always the experimental one. The HRs are also taken as posted, without checking their direction.
+Our work so far is a first automatic pass and nobody has reviewed the records manually yet. In particular we don't know yet if the ICI arm is always the experimental one. The HRs are also taken as posted, without checking their direction.
 
 ### 2. Data quality
 
@@ -68,14 +68,14 @@ mean(solid$log.pfs > 0)
 mean(solid$log.os > 0)
 ```
 
-The PFS HR is above 1 in 21% of the comparisons and the OS HR in 26%. An HR above 1 can mean that the experimental arm did worse. It can also mean that the trial posted the HR the other way round (control against experimental). The hand check will tell which.
+The PFS HR is above 1 in 21% of the comparisons and the OS HR in 26%. An HR above 1 can mean that the experimental arm did worse. It can also mean that the trial posted the HR the other way round (control against experimental). The manual review will tell which.
 
 ```{r}
 sum(solid$n.pairs > 1)
 sum(solid$pfs.n.hr > 1 | solid$os.n.hr > 1)
 ```
 
-In 53 studies there is more than one PFS-OS comparison. In 194 there are several HRs for the same end point and the same arms, for instance in subgroups. The code keeps the first one posted. It can be a subgroup rather than the primary analysis. The hand check will pick the primary comparison and analysis, with PFS and OS in the same population.
+In 53 studies there is more than one PFS-OS comparison. In 194 there are several HRs for the same end point and the same arms, for instance in subgroups. The code keeps the first one posted. It can be a subgroup rather than the primary analysis. The manual review will pick the primary comparison and analysis, with PFS and OS in the same population.
 
 ```{r}
 w = 1/solid$se.os^2
@@ -87,7 +87,7 @@ solid$arm1[low]
 solid$arm2[low]
 ```
 
-The standard error se.os goes from 0.044 to 1.220. With weights $w_i = 1/s_i^2$, the most precise comparison weighs about 785 times more than the least precise one. We take a closer look at the three comparisons with the smallest se.os, as they weigh the most. The first one (NCT02178956) posts an OS HR of 1.01 with a CI from 0.86 to 1.02. On the log scale a Wald CI is centered on the log HR. Here the HR sits almost on the upper limit. The trial paper gives 0.86 to 1.20 (Shah et al., Clin. Cancer Res. 2022). The registry entry swaps two digits (1.02 for 1.20). We will correct it in the hand check. The second one compares darbepoetin alfa (a drug for anemia) with placebo. The proposal only keeps comparisons of anticancer drugs. This one goes. The hand check will also look for other supportive care trials. The third (NCT03675737) looks fine.
+The standard error se.os goes from 0.044 to 1.220. With weights $w_i = 1/s_i^2$, the most precise comparison weighs about 785 times more than the least precise one. We take a closer look at the three comparisons with the smallest se.os, as they weigh the most. The first one (NCT02178956) posts an OS HR of 1.01 with a CI from 0.86 to 1.02. On the log scale a Wald CI is centered on the log HR. Here the HR sits almost on the upper limit. The trial paper gives 0.86 to 1.20 (Shah et al., Clin. Cancer Res. 2022). The registry entry swaps two digits (1.02 for 1.20). We will correct it in the manual review. The second one compares darbepoetin alfa (a drug for anemia) with placebo. The proposal only keeps comparisons of anticancer drugs. This one goes. The manual review will also look for other supportive care trials. The third (NCT03675737) looks fine.
 
 ```{r}
 asym = (log(solid$os.upper) + log(solid$os.lower))/2 - log(solid$os.hr)
@@ -105,7 +105,7 @@ options(width = 76)
 table(solid$tumor)
 ```
 
-Neither categorical variable has missing values. For ici.status this is only because the code labels unclear comparisons as undetermined. We will code these 42 by hand. Out of the 443 comparisons, 114 are coded as having an ICI in one arm only and 256 in no arm. The proposal excludes the 31 with an ICI in both arms, since their control arm has one. One can observe that lung is by far the most common tumor type (135) and pancreas the rarest (10).
+Neither categorical variable has missing values. For ici.status this is only because the code labels unclear comparisons as undetermined. We will code these 42 in the manual review. Out of the 443 comparisons, 114 are coded as having an ICI in one arm only and 256 in no arm. The proposal excludes the 31 with an ICI in both arms, since their control arm has one. One can observe that lung is by far the most common tumor type (135) and pancreas the rarest (10).
 
 ### 3. Overlap of the two groups
 
@@ -143,7 +143,7 @@ period = cut(analysis$start.year, c(1997, 2008, 2013, 2022),
 table(period, analysis$ici.status)
 ```
 
-The median start year is 2017 for ICI comparisons against 2011 for the others. In this first pass no ICI comparison started before 2009. Only 6 started between 2009 and 2013 against 94 non-ICI ones. One can observe that start years overlap much less than PFS effects. Even with start year in the model, part of the non-ICI slope would come from years without any ICI comparison. A restriction on period or on clinical setting could help but it would also change the two other checks. We will decide on it after the hand check and before fitting the model.
+The median start year is 2017 for ICI comparisons against 2011 for the others. In this first pass no ICI comparison started before 2009. Only 6 started between 2009 and 2013 against 94 non-ICI ones. One can observe that start years overlap much less than PFS effects. Even with start year in the model, part of the non-ICI slope would come from years without any ICI comparison. A restriction on period or on clinical setting could help but it would also change the two other checks. We will decide on it after the manual review and before fitting the model.
 
 ```{r, fig.width = 5, fig.height = 4}
 plot(log.os ~ log.pfs, data = analysis, las = 1,
@@ -153,3 +153,32 @@ abline(0, 1)
 ```
 
 This plot pools the two groups. Most points sit in the lower left quadrant (where both HRs are below 1). The association is positive but the cloud is flatter than the solid line of slope 1. We can see that OS effects vary less than PFS effects (as in section 2). We don't split this plot by group yet. The choice of a restriction must not depend on the slope difference.
+
+### 4. Hypothesis and baseline model
+
+We hypothesize that the trial-level slope linking the treatment effect on OS to the treatment effect on PFS differs between ICI and non-ICI comparisons. Let $I_i = 1$ if only the experimental arm of comparison $i$ contains an ICI and $I_i = 0$ if neither arm does. Let $Z_i$ hold the tumor type and the start year. The baseline model is the model from our proposal
+$$Y_i = \beta_0 + \beta_1 X_i + \beta_2 I_i + \beta_3 X_i I_i + \gamma^\top Z_i + \varepsilon_i,$$
+fitted by weighted least squares with weights $w_i = 1/s_i^2$. The model assumes that the slopes do not vary with tumor type or start year. Then $\beta_1$ is the PFS-OS slope without an ICI and $\beta_1 + \beta_3$ the slope with an ICI, for a given tumor type and start year. We test
+$$H_0\colon \beta_3 = 0 \quad \text{against} \quad H_A\colon \beta_3 \neq 0.$$
+Under $H_0$ the two groups share the same PFS-OS slope. We report the estimate of $\beta_3$ with a 95% CI. Both the CI and the test use heteroscedasticity-consistent (sandwich) standard errors, in the HC3 form, which is less affected by the few comparisons with very large weights (section 2). Weighted least squares assumes that the variance of $Y_i$ is proportional to $s_i^2$. This fails if trials also vary by an extra amount on top of their sampling error. The sandwich standard errors do not rely on this assumption. With them the t distribution is only an approximation.
+
+As a baseline we fit the model to the 370 comparisons of section 3, before the manual review and before any restriction.
+
+```{r, message = FALSE}
+library(sandwich)
+library(lmtest)
+analysis$ici = as.numeric(analysis$ici.status == "ICI in one arm")
+fit = lm(log.os ~ log.pfs * ici + tumor + start.year, data = analysis,
+         weights = 1/se.os^2)
+hc = vcovHC(fit, type = "HC3")
+round(coeftest(fit, vcov = hc)[c("log.pfs", "ici", "log.pfs:ici"), ], 3)
+round(coefci(fit, vcov = hc)["log.pfs:ici", ], 3)
+round(sum(coef(fit)[c("log.pfs", "log.pfs:ici")]), 3)
+round(summary(fit)$sigma, 2)
+```
+
+The estimated slope is 0.355 without an ICI and 0.468 with one. So $\hat\beta_3 = 0.113$, with a 95% CI from $-0.031$ to 0.257 and a p-value of 0.12. At the 5% level we can't reject $H_0$. The CI still allows a slope about 70% steeper in the ICI group, as well as a slightly flatter one. $\hat\beta_2 = -0.090$ means that for a PFS HR of 1, the OS HR is about 9% lower with an ICI. Both slopes are well below 1, in line with the flat cloud of section 3.
+
+The residual standard error of the weighted fit is 1.2. If $s_i$ were the only source of variation it would be close to 1. This suggests some extra variation between trials, which is why we use the sandwich standard errors.
+
+These numbers are only a baseline. The manual review will correct HRs (such as NCT02178956), drop comparisons that are not of anticancer drugs and code the 42 undetermined ones. Section 3 also showed that the two groups barely overlap in start year and that pancreas has no ICI comparison. So the adjustment for $Z_i$ partly relies on extrapolation. We will decide on a restriction from the overlap checks only and refit the model once, together with the residual, Cook's distance and unweighted checks of the proposal.
